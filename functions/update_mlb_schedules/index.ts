@@ -1,6 +1,9 @@
 // import { serve } from 'https://deno.land/std@0.168.0/http/server.ts';
 import axiod from "https://deno.land/x/axiod@0.26.2/mod.ts";
-// import { Database } from '../database.types.ts'
+import { createClient } from "https://esm.sh/@supabase/supabase-js@2.36.0"
+import { Database } from '../database.types.ts'
+
+const supabase = createClient<Database>('http://localhost:54321', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImV4cCI6MTk4MzgxMjk5Nn0.EGIM96RAZx35lJzdJsyH-qQwv8Hdp7fsn3W0YpN81IU')
 
 interface MLBGame {
   title: string
@@ -29,7 +32,7 @@ interface ESPNMLBScheduleResponse {
   }
 }
 
-const getMLBGamesFromESPNForDate = async function (date: Date): Promise<MLBGame[]> {
+const getMLBGamesForDateFromESPN = async function (date: Date): Promise<MLBGame[]> {
   // https://github.com/sportsdataverse/sportsdataverse-js/blob/main/app/services/mlb.service.js#L149
 
   // year + month with leading 0 + day with leading 0
@@ -77,12 +80,25 @@ const getMLBGamesFromESPNForDate = async function (date: Date): Promise<MLBGame[
   return mlbGames
 };
 
-const overwriteMLBSchedule = function(mlbGames: MLBGame[]) {
+const overwriteMLBSchedule = async function(mlbGames: MLBGame[]) {
+  const { error } = await supabase.from('mlb_game_today').delete().neq("title", "delete_everything")
+  if (error) console.log(`Error erasing existing mlb games: ${JSON.stringify(error)}`)
 
+  mlbGames.forEach(async game => {
+    const { error } = await supabase.from('mlb_game_today').insert({
+      title: game.title,
+      home_team: +game.homeTeamID,
+      away_team: +game.awayteamID,
+      timestamptz: game.date,
+      stream_link: game.streamlink
+    })
+    if (error) console.log(`Error writing mlb game: ${JSON.stringify(error)}`)
+  });
 }
 
-const mlbGamesToday = await getMLBGamesFromESPNForDate(new Date())
+const mlbGamesToday = await getMLBGamesForDateFromESPN(new Date())
 console.log(mlbGamesToday);
+overwriteMLBSchedule(mlbGamesToday)
 
 // serve(async (req) => {
 //   const result = await sdv.mlb.getSchedule(2016, 4, 15)

@@ -42,6 +42,7 @@ export interface Database {
           id: number
           stream_link: string | null
           timestamptz: string | null
+          title: string | null
         }
         Insert: {
           away_team?: number | null
@@ -50,6 +51,7 @@ export interface Database {
           id?: number
           stream_link?: string | null
           timestamptz?: string | null
+          title?: string | null
         }
         Update: {
           away_team?: number | null
@@ -58,6 +60,7 @@ export interface Database {
           id?: number
           stream_link?: string | null
           timestamptz?: string | null
+          title?: string | null
         }
         Relationships: [
           {

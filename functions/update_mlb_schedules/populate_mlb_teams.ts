@@ -19,5 +19,11 @@ mlbTeamData.sports[0].leagues[0].teams.forEach(async element => {
         logo: logo[0].href,
         abbreviation: element.team.abbreviation
     })
-    if (error) console.log(error)
+    if (error) console.log(`Error writing mlb team data: ${error}`)
 });
+
+// CREATE TYPE mlb_division AS ENUM ('Central', 'East', 'West');
+// CREATE TYPE mlb_league AS ENUM ('American League', 'National League')
+// ALTER TABLE "mlb_team" ADD COLUMN division mlb_division;
+// ALTER TABLE "mlb_team" ADD COLUMN league mlb_league;
+// UPDATE mlb_team SET division = 'West', league = 'American League' WHERE abbreviation = 'OAK';

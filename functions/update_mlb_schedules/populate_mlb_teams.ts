@@ -12,8 +12,8 @@ mlbTeamData.sports[0].leagues[0].teams.forEach(async element => {
     console.log(logo[0].href)
     console.log(element.team.abbreviation)
 
-    const { error } = await supabase.from("mlb_teams").insert({
-        id: element.team.id,
+    const { error } = await supabase.from("mlb_team").insert({
+        id: +element.team.id,
         short_display_name: element.team.shortDisplayName,
         display_name: element.team.displayName,
         logo: logo[0].href,

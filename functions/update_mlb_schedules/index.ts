@@ -1,24 +1,40 @@
 // import { serve } from 'https://deno.land/std@0.168.0/http/server.ts';
 import axiod from "https://deno.land/x/axiod@0.26.2/mod.ts";
+// import { Database } from '../database.types.ts'
 
-interface Game {
+interface MLBGame {
+  title: string
   homeTeamID: string
   awayteamID: string
   date: string
   streamlink: string
 }
 
-// Follow this setup guide to integrate the Deno language server with your editor:
-// https://deno.land/manual/getting_started/setup_your_environment
-// This enables autocomplete, go to definition, etc.
+interface ESPNMLBScheduleResponse {
+  schedule: {
+    [index: string]: {
+      games: {
+        name: string,
+        date: string,
+        competitions: {
+          [index: number]: {
+            competitors: {
+              homeAway: string
+              id: string
+            } []
+          }
+        }
+      } []
+    }
+  }
+}
 
-const getSchedule = async function (date: Date): Game[] {
+const getMLBSchedule = async function (date: Date): Promise<MLBGame[]> {
   // https://github.com/sportsdataverse/sportsdataverse-js/blob/main/app/services/mlb.service.js#L149
 
   // year + month with leading 0 + day with leading 0
   const espnDateString = `${date.getFullYear()}${('0' + (date.getMonth() + 1)).slice(-2)}${('0' + date.getDate()).slice(-2)}`
   const baseUrl = `http://cdn.espn.com/core/mlb/schedule`;
-
   const params = {
     xhr: 1,
     render: false,
@@ -31,17 +47,39 @@ const getSchedule = async function (date: Date): Game[] {
     params
   });
 
-  const gamesScheduledToday = response.data.content.schedule[espnDateString].games
-  console.log(gamesScheduledToday)
-  gamesScheduledToday.forEach((element: { competitions: any; }) => {
-    console.log(element.competitions)
+  const espnGamesScheduledToday: ESPNMLBScheduleResponse = response.data.content
+  const mlbGamesToday: MLBGame[] = []
+
+  espnGamesScheduledToday.schedule[espnDateString].games.forEach((game) => {
+    let homeTeamID = "" 
+    let awayTeamID = ""
+
+    game.competitions[0].competitors.forEach((team) => {
+      if (team.homeAway == "home") {
+        homeTeamID = team.id
+      }
+      if (team.homeAway == "away") {
+        awayTeamID = team.id
+      }
+    });
+
+    const mlbGame: MLBGame = {
+      title: game.name,
+      homeTeamID: homeTeamID,
+      awayteamID: awayTeamID,
+      date: game.date,
+      streamlink: ""
+    }
+
+    mlbGamesToday.push(mlbGame)
   });
 
-  return gamesScheduledToday
+  return mlbGamesToday
 };
 
-const data = await getSchedule(new Date())
-// console.log(data);
+
+const mlbGames = await getMLBSchedule(new Date())
+console.log(mlbGames);
 
 // serve(async (req) => {
 //   const result = await sdv.mlb.getSchedule(2016, 4, 15)

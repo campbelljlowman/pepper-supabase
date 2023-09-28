@@ -34,7 +34,47 @@ export interface Database {
   }
   public: {
     Tables: {
-      mlb_teams: {
+      mlb_game_today: {
+        Row: {
+          away_team: number | null
+          created_at: string
+          home_team: number | null
+          id: number
+          stream_link: string | null
+          timestamptz: string | null
+        }
+        Insert: {
+          away_team?: number | null
+          created_at?: string
+          home_team?: number | null
+          id?: number
+          stream_link?: string | null
+          timestamptz?: string | null
+        }
+        Update: {
+          away_team?: number | null
+          created_at?: string
+          home_team?: number | null
+          id?: number
+          stream_link?: string | null
+          timestamptz?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "mlb_game_today_away_team_fkey"
+            columns: ["away_team"]
+            referencedRelation: "mlb_team"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "mlb_game_today_home_team_fkey"
+            columns: ["home_team"]
+            referencedRelation: "mlb_team"
+            referencedColumns: ["id"]
+          }
+        ]
+      }
+      mlb_team: {
         Row: {
           abbreviation: string | null
           created_at: string
@@ -64,24 +104,6 @@ export interface Database {
           league?: Database["public"]["Enums"]["mlb_league"] | null
           logo?: string | null
           short_display_name?: string | null
-        }
-        Relationships: []
-      }
-      "test table": {
-        Row: {
-          created_at: string
-          id: number
-          test_colums: string | null
-        }
-        Insert: {
-          created_at?: string
-          id?: number
-          test_colums?: string | null
-        }
-        Update: {
-          created_at?: string
-          id?: number
-          test_colums?: string | null
         }
         Relationships: []
       }

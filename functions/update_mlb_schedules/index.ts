@@ -29,7 +29,7 @@ interface ESPNMLBScheduleResponse {
   }
 }
 
-const getMLBSchedule = async function (date: Date): Promise<MLBGame[]> {
+const getMLBGames = async function (date: Date): Promise<MLBGame[]> {
   // https://github.com/sportsdataverse/sportsdataverse-js/blob/main/app/services/mlb.service.js#L149
 
   // year + month with leading 0 + day with leading 0
@@ -47,10 +47,10 @@ const getMLBSchedule = async function (date: Date): Promise<MLBGame[]> {
     params
   });
 
-  const espnGamesScheduledToday: ESPNMLBScheduleResponse = response.data.content
-  const mlbGamesToday: MLBGame[] = []
+  const espnGamesScheduled: ESPNMLBScheduleResponse = response.data.content
+  const mlbGames: MLBGame[] = []
 
-  espnGamesScheduledToday.schedule[espnDateString].games.forEach((game) => {
+  espnGamesScheduled.schedule[espnDateString].games.forEach((game) => {
     let homeTeamID = "" 
     let awayTeamID = ""
 
@@ -71,15 +71,18 @@ const getMLBSchedule = async function (date: Date): Promise<MLBGame[]> {
       streamlink: ""
     }
 
-    mlbGamesToday.push(mlbGame)
+    mlbGames.push(mlbGame)
   });
 
-  return mlbGamesToday
+  return mlbGames
 };
 
+const updateMLBSchedule = function(mlbGames: MLBGame[]) {
 
-const mlbGames = await getMLBSchedule(new Date())
-console.log(mlbGames);
+}
+
+const mlbGamesToday = await getMLBGames(new Date())
+console.log(mlbGamesToday);
 
 // serve(async (req) => {
 //   const result = await sdv.mlb.getSchedule(2016, 4, 15)

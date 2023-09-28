@@ -29,7 +29,7 @@ interface ESPNMLBScheduleResponse {
   }
 }
 
-const getMLBGames = async function (date: Date): Promise<MLBGame[]> {
+const getMLBGamesFromESPNForDate = async function (date: Date): Promise<MLBGame[]> {
   // https://github.com/sportsdataverse/sportsdataverse-js/blob/main/app/services/mlb.service.js#L149
 
   // year + month with leading 0 + day with leading 0
@@ -77,11 +77,11 @@ const getMLBGames = async function (date: Date): Promise<MLBGame[]> {
   return mlbGames
 };
 
-const updateMLBSchedule = function(mlbGames: MLBGame[]) {
+const overwriteMLBSchedule = function(mlbGames: MLBGame[]) {
 
 }
 
-const mlbGamesToday = await getMLBGames(new Date())
+const mlbGamesToday = await getMLBGamesFromESPNForDate(new Date())
 console.log(mlbGamesToday);
 
 // serve(async (req) => {

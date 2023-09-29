@@ -1,9 +1,9 @@
-// import { serve } from 'https://deno.land/std@0.168.0/http/server.ts';
+import { serve } from 'https://deno.land/std@0.168.0/http/server.ts';
 import axiod from "https://deno.land/x/axiod@0.26.2/mod.ts";
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2.36.0"
 import { Database } from '../database.types.ts'
 
-const supabase = createClient<Database>('http://localhost:54321', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImV4cCI6MTk4MzgxMjk5Nn0.EGIM96RAZx35lJzdJsyH-qQwv8Hdp7fsn3W0YpN81IU')
+const supabase = createClient<Database>(Deno.env.get('SUPABASE_URL')!, Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')!)
 
 interface MLBGame {
   title: string
@@ -96,26 +96,21 @@ const overwriteMLBSchedule = async function(mlbGames: MLBGame[]) {
   });
 }
 
-const mlbGamesToday = await getMLBGamesForDateFromESPN(new Date())
-console.log(mlbGamesToday);
-overwriteMLBSchedule(mlbGamesToday)
+const updateMLBSchedules = async function(_req: Request) {
+  const mlbGamesToday = await getMLBGamesForDateFromESPN(new Date())
+  
+  await overwriteMLBSchedule(mlbGamesToday)
+  
+  return new Response(
+    JSON.stringify("Successfully updated MLB schedules"),
+  )
+}
 
-// serve(async (req) => {
-//   const result = await sdv.mlb.getSchedule(2016, 4, 15)
-
-//   const { name } = await req.json()
-//   const data = {
-//     message: `Hello ${name}!`,
-//   }
-
-//   return new Response(
-//     JSON.stringify(result),
-//     { headers: { "Content-Type": "application/json" } },
-//   )
-// })
+// updateMLBSchedules()
+serve(updateMLBSchedules)
 
 // To invoke:
-// curl -i --location --request POST 'http://localhost:54321/functions/v1/hello-world' \
+// curl -i --location --request POST 'http://localhost:54321/functions/v1/update-mlb-schedule' \
 //   --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24iLCJleHAiOjE5ODM4MTI5OTZ9.CRXP1A7WOeoJeXxjNni43kdQwgnWNReilDMblYTn_I0' \
 //   --header 'Content-Type: application/json' \
 //   --data '{"name":"Functions"}'

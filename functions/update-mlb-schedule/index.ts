@@ -97,6 +97,7 @@ const overwriteMLBSchedule = async function(mlbGames: MLBGame[]) {
 }
 
 const updateMLBSchedules = async function(_req: Request) {
+  // Serves any HTTP verb
   const mlbGamesToday = await getMLBGamesForDateFromESPN(new Date())
   
   await overwriteMLBSchedule(mlbGamesToday)
@@ -114,3 +115,23 @@ serve(updateMLBSchedules)
 //   --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24iLCJleHAiOjE5ODM4MTI5OTZ9.CRXP1A7WOeoJeXxjNni43kdQwgnWNReilDMblYTn_I0' \
 //   --header 'Content-Type: application/json' \
 //   --data '{"name":"Functions"}'
+
+// To schedule in database (psql)
+// https://supabase.com/docs/guides/functions/schedule-functions
+
+// select
+//   cron.schedule(
+//     'update-mlb-schedule-every-day',
+//     '30 4 * * *', -- every day at 4:30 AM
+//     $$
+//     select
+//       net.http_post(
+//           url:='http://host.docker.internal:54321/functions/v1/update-mlb-schedule',
+//           headers:='{"Content-Type": "application/json", "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24iLCJleHAiOjE5ODM4MTI5OTZ9.CRXP1A7WOeoJeXxjNni43kdQwgnWNReilDMblYTn_I0"}'::jsonb
+//       ) as request_id;
+//     $$
+//   );
+
+// To unschedule
+
+// select cron.unschedule('update-mlb-schedule-every-day');

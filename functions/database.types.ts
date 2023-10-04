@@ -36,31 +36,31 @@ export interface Database {
     Tables: {
       mlb_game_today: {
         Row: {
-          away_team: number | null
+          away_team: number
           created_at: string
-          home_team: number | null
+          home_team: number
           id: number
           stream_link: string | null
-          timestamptz: string | null
-          title: string | null
+          timestamptz: string
+          title: string
         }
         Insert: {
-          away_team?: number | null
+          away_team: number
           created_at?: string
-          home_team?: number | null
+          home_team: number
           id?: number
           stream_link?: string | null
-          timestamptz?: string | null
-          title?: string | null
+          timestamptz: string
+          title: string
         }
         Update: {
-          away_team?: number | null
+          away_team?: number
           created_at?: string
-          home_team?: number | null
+          home_team?: number
           id?: number
           stream_link?: string | null
-          timestamptz?: string | null
-          title?: string | null
+          timestamptz?: string
+          title?: string
         }
         Relationships: [
           {
@@ -79,34 +79,34 @@ export interface Database {
       }
       mlb_team: {
         Row: {
-          abbreviation: string | null
+          abbreviation: string
           created_at: string
-          display_name: string | null
-          division: Database["public"]["Enums"]["mlb_division"] | null
+          display_name: string
+          division: Database["public"]["Enums"]["mlb_division"]
           id: number
-          league: Database["public"]["Enums"]["mlb_league"] | null
-          logo: string | null
-          short_display_name: string | null
+          league: Database["public"]["Enums"]["mlb_league"]
+          logo: string
+          short_display_name: string
         }
         Insert: {
-          abbreviation?: string | null
+          abbreviation: string
           created_at?: string
-          display_name?: string | null
-          division?: Database["public"]["Enums"]["mlb_division"] | null
+          display_name: string
+          division: Database["public"]["Enums"]["mlb_division"]
           id?: number
-          league?: Database["public"]["Enums"]["mlb_league"] | null
-          logo?: string | null
-          short_display_name?: string | null
+          league: Database["public"]["Enums"]["mlb_league"]
+          logo: string
+          short_display_name: string
         }
         Update: {
-          abbreviation?: string | null
+          abbreviation?: string
           created_at?: string
-          display_name?: string | null
-          division?: Database["public"]["Enums"]["mlb_division"] | null
+          display_name?: string
+          division?: Database["public"]["Enums"]["mlb_division"]
           id?: number
-          league?: Database["public"]["Enums"]["mlb_league"] | null
-          logo?: string | null
-          short_display_name?: string | null
+          league?: Database["public"]["Enums"]["mlb_league"]
+          logo?: string
+          short_display_name?: string
         }
         Relationships: []
       }

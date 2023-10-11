@@ -34,32 +34,56 @@ export interface Database {
   }
   public: {
     Tables: {
+      game_stream: {
+        Row: {
+          created_at: string
+          id: number
+          name: string
+          stream_link: string
+          view_price: number
+        }
+        Insert: {
+          created_at?: string
+          id?: number
+          name: string
+          stream_link: string
+          view_price: number
+        }
+        Update: {
+          created_at?: string
+          id?: number
+          name?: string
+          stream_link?: string
+          view_price?: number
+        }
+        Relationships: []
+      }
       mlb_game_today: {
         Row: {
           away_team: number
           created_at: string
+          game_stream: number | null
           home_team: number
           id: number
-          stream_link: string | null
-          timestamptz: string
+          start_time: string
           title: string
         }
         Insert: {
           away_team: number
           created_at?: string
+          game_stream?: number | null
           home_team: number
           id?: number
-          stream_link?: string | null
-          timestamptz: string
+          start_time: string
           title: string
         }
         Update: {
           away_team?: number
           created_at?: string
+          game_stream?: number | null
           home_team?: number
           id?: number
-          stream_link?: string | null
-          timestamptz?: string
+          start_time?: string
           title?: string
         }
         Relationships: [
@@ -67,6 +91,12 @@ export interface Database {
             foreignKeyName: "mlb_game_today_away_team_fkey"
             columns: ["away_team"]
             referencedRelation: "mlb_team"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "mlb_game_today_game_stream_fkey"
+            columns: ["game_stream"]
+            referencedRelation: "game_stream"
             referencedColumns: ["id"]
           },
           {

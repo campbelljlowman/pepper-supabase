@@ -10,7 +10,7 @@ interface MLBGame {
   homeTeamID: string
   awayteamID: string
   date: string
-  streamlink: string
+  // streamlink: string
 }
 
 interface ESPNMLBScheduleResponse {
@@ -53,28 +53,37 @@ const getMLBGamesForDateFromESPN = async function (date: Date): Promise<MLBGame[
   const espnGamesScheduled: ESPNMLBScheduleResponse = response.data.content
   const mlbGames: MLBGame[] = []
 
+  if (espnGamesScheduled.schedule[espnDateString].games.length === 0) {
+    return mlbGames
+  }
+
   espnGamesScheduled.schedule[espnDateString].games.forEach((game) => {
-    let homeTeamID = "" 
-    let awayTeamID = ""
-
-    game.competitions[0].competitors.forEach((team) => {
-      if (team.homeAway == "home") {
-        homeTeamID = team.id
+    try {
+      let homeTeamID = "" 
+      let awayTeamID = ""
+  
+      game.competitions[0].competitors.forEach((team) => {
+        if (team.homeAway == "home") {
+          homeTeamID = team.id
+        }
+        if (team.homeAway == "away") {
+          awayTeamID = team.id
+        }
+      });
+  
+      const mlbGame: MLBGame = {
+        title: game.name,
+        homeTeamID: homeTeamID,
+        awayteamID: awayTeamID,
+        date: game.date
+        // streamlink: ""
       }
-      if (team.homeAway == "away") {
-        awayTeamID = team.id
-      }
-    });
-
-    const mlbGame: MLBGame = {
-      title: game.name,
-      homeTeamID: homeTeamID,
-      awayteamID: awayTeamID,
-      date: game.date,
-      streamlink: ""
+      mlbGames.push(mlbGame)
+    }
+    catch(error) {
+      console.log(`Error parsing game info: ${error}`)
     }
 
-    mlbGames.push(mlbGame)
   });
 
   return mlbGames
@@ -89,8 +98,8 @@ const overwriteMLBSchedule = async function(mlbGames: MLBGame[]) {
       title: game.title,
       home_team: +game.homeTeamID,
       away_team: +game.awayteamID,
-      timestamptz: game.date,
-      stream_link: game.streamlink
+      start_time: game.date
+      // stream_link: game.streamlink
     })
     if (error) console.log(`Error writing mlb game: ${JSON.stringify(error)}`)
   });

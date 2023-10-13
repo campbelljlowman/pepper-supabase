@@ -140,6 +140,33 @@ export interface Database {
         }
         Relationships: []
       }
+      nhl_team: {
+        Row: {
+          abbreviation: string
+          created_at: string
+          display_name: string
+          id: number
+          logo: string
+          short_display_name: string
+        }
+        Insert: {
+          abbreviation: string
+          created_at?: string
+          display_name: string
+          id?: number
+          logo: string
+          short_display_name: string
+        }
+        Update: {
+          abbreviation?: string
+          created_at?: string
+          display_name?: string
+          id?: number
+          logo?: string
+          short_display_name?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never

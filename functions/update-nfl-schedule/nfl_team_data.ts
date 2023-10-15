@@ -1,170 +1,38 @@
-// curl http://site.api.espn.com/apis/site/v2/sports/hockey/nhl/teams
-export const nhlTeamData = {
+// curl http://site.api.espn.com/apis/site/v2/sports/football/nfl/teams -d 'limit=1000'
+export const nflTeamData = {
     "sports":[
        {
-          "id":"70",
-          "uid":"s:70",
-          "name":"Hockey",
-          "slug":"hockey",
+          "id":"20",
+          "uid":"s:20",
+          "name":"Football",
+          "slug":"football",
           "leagues":[
              {
-                "id":"90",
-                "uid":"s:70~l:90",
-                "name":"National Hockey League",
-                "abbreviation":"NHL",
-                "shortName":"NHL",
-                "slug":"nhl",
+                "id":"28",
+                "uid":"s:20~l:28",
+                "name":"National Football League",
+                "abbreviation":"NFL",
+                "shortName":"NFL",
+                "slug":"nfl",
                 "teams":[
                    {
                       "team":{
-                         "id":"25",
-                         "uid":"s:70~l:90~t:25",
-                         "slug":"anaheim-ducks",
-                         "abbreviation":"ANA",
-                         "displayName":"Anaheim Ducks",
-                         "shortDisplayName":"Ducks",
-                         "name":"Ducks",
-                         "nickname":"Anaheim",
-                         "location":"Anaheim",
-                         "color":"000000",
-                         "alternateColor":"f26924",
-                         "isActive":true,
-                         "isAllStar":false,
-                         "logos":[
-                            {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/ana.png",
-                               "alt":"",
-                               "rel":[
-                                  "full",
-                                  "default"
-                               ],
-                               "width":500,
-                               "height":500
-                            },
-                            {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/ana.png",
-                               "alt":"",
-                               "rel":[
-                                  "full",
-                                  "dark"
-                               ],
-                               "width":500,
-                               "height":500
-                            },
-                            {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/ana.png",
-                               "alt":"",
-                               "rel":[
-                                  "full",
-                                  "scoreboard"
-                               ],
-                               "width":500,
-                               "height":500
-                            },
-                            {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/scoreboard/ana.png",
-                               "alt":"",
-                               "rel":[
-                                  "full",
-                                  "scoreboard",
-                                  "dark"
-                               ],
-                               "width":500,
-                               "height":500
-                            }
-                         ],
-                         "links":[
-                            {
-                               "language":"en-US",
-                               "rel":[
-                                  "clubhouse",
-                                  "desktop",
-                                  "team"
-                               ],
-                               "href":"http://www.espn.com/nhl/team/_/name/ana/anaheim-ducks",
-                               "text":"Clubhouse",
-                               "shortText":"Clubhouse",
-                               "isExternal":false,
-                               "isPremium":false,
-                               "isHidden":false
-                            },
-                            {
-                               "language":"en-US",
-                               "rel":[
-                                  "roster",
-                                  "desktop",
-                                  "team"
-                               ],
-                               "href":"http://www.espn.com/nhl/team/roster/_/name/ana/anaheim-ducks",
-                               "text":"Roster",
-                               "shortText":"Roster",
-                               "isExternal":false,
-                               "isPremium":false,
-                               "isHidden":false
-                            },
-                            {
-                               "language":"en-US",
-                               "rel":[
-                                  "stats",
-                                  "desktop",
-                                  "team"
-                               ],
-                               "href":"http://www.espn.com/nhl/team/stats/_/name/ana/anaheim-ducks",
-                               "text":"Statistics",
-                               "shortText":"Statistics",
-                               "isExternal":false,
-                               "isPremium":false,
-                               "isHidden":false
-                            },
-                            {
-                               "language":"en-US",
-                               "rel":[
-                                  "schedule",
-                                  "desktop",
-                                  "team"
-                               ],
-                               "href":"https://www.espn.com/nhl/team/schedule/_/name/ana",
-                               "text":"Schedule",
-                               "shortText":"Schedule",
-                               "isExternal":false,
-                               "isPremium":false,
-                               "isHidden":false
-                            },
-                            {
-                               "language":"en-US",
-                               "rel":[
-                                  "tickets",
-                                  "desktop",
-                                  "team"
-                               ],
-                               "href":"https://www.vividseats.com/anaheim-ducks-tickets--sports-nhl-hockey/performer/30?wsUser=717",
-                               "text":"Tickets",
-                               "shortText":"Tickets",
-                               "isExternal":true,
-                               "isPremium":false,
-                               "isHidden":false
-                            }
-                         ]
-                      }
-                   },
-                   {
-                      "team":{
-                         "id":"24",
-                         "uid":"s:70~l:90~t:24",
-                         "slug":"arizona-coyotes",
+                         "id":"22",
+                         "uid":"s:20~l:28~t:22",
+                         "slug":"arizona-cardinals",
                          "abbreviation":"ARI",
-                         "displayName":"Arizona Coyotes",
-                         "shortDisplayName":"Coyotes",
-                         "name":"Coyotes",
-                         "nickname":"Arizona",
+                         "displayName":"Arizona Cardinals",
+                         "shortDisplayName":"Cardinals",
+                         "name":"Cardinals",
+                         "nickname":"Cardinals",
                          "location":"Arizona",
-                         "color":"790023",
-                         "alternateColor":"b95915",
+                         "color":"a4113e",
+                         "alternateColor":"ffffff",
                          "isActive":true,
                          "isAllStar":false,
                          "logos":[
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/ari.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/ari.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -174,7 +42,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/ari.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/ari.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -184,7 +52,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/ari.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ari.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -194,7 +62,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/scoreboard/ari.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/scoreboard/ari.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -213,7 +81,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/_/name/ari/arizona-coyotes",
+                               "href":"https://www.espn.com/nfl/team/_/name/ari/arizona-cardinals",
                                "text":"Clubhouse",
                                "shortText":"Clubhouse",
                                "isExternal":false,
@@ -227,7 +95,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/roster/_/name/ari/arizona-coyotes",
+                               "href":"http://www.espn.com/nfl/team/roster/_/name/ari/arizona-cardinals",
                                "text":"Roster",
                                "shortText":"Roster",
                                "isExternal":false,
@@ -241,7 +109,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/stats/_/name/ari/arizona-coyotes",
+                               "href":"http://www.espn.com/nfl/team/stats/_/name/ari/arizona-cardinals",
                                "text":"Statistics",
                                "shortText":"Statistics",
                                "isExternal":false,
@@ -255,7 +123,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"https://www.espn.com/nhl/team/schedule/_/name/ari",
+                               "href":"https://www.espn.com/nfl/team/schedule/_/name/ari",
                                "text":"Schedule",
                                "shortText":"Schedule",
                                "isExternal":false,
@@ -269,10 +137,24 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"https://www.vividseats.com/arizona-coyotes-tickets--sports-nhl-hockey/performer/677?wsUser=717",
+                               "href":"https://www.vividseats.com/arizona-cardinals-tickets--sports-nfl-football/performer/40?wsUser=717",
                                "text":"Tickets",
                                "shortText":"Tickets",
                                "isExternal":true,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "depthchart",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"https://www.espn.com/nfl/team/depth/_/name/ari",
+                               "text":"Depth Chart",
+                               "shortText":"Depth Chart",
+                               "isExternal":false,
                                "isPremium":false,
                                "isHidden":false
                             }
@@ -282,21 +164,21 @@ export const nhlTeamData = {
                    {
                       "team":{
                          "id":"1",
-                         "uid":"s:70~l:90~t:1",
-                         "slug":"boston-bruins",
-                         "abbreviation":"BOS",
-                         "displayName":"Boston Bruins",
-                         "shortDisplayName":"Bruins",
-                         "name":"Bruins",
-                         "nickname":"Boston",
-                         "location":"Boston",
-                         "color":"000000",
-                         "alternateColor":"fdbb30",
+                         "uid":"s:20~l:28~t:1",
+                         "slug":"atlanta-falcons",
+                         "abbreviation":"ATL",
+                         "displayName":"Atlanta Falcons",
+                         "shortDisplayName":"Falcons",
+                         "name":"Falcons",
+                         "nickname":"Falcons",
+                         "location":"Atlanta",
+                         "color":"a71930",
+                         "alternateColor":"000000",
                          "isActive":true,
                          "isAllStar":false,
                          "logos":[
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/bos.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/atl.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -306,7 +188,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/bos.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/atl.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -316,7 +198,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/bos.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/atl.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -326,7 +208,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/scoreboard/bos.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/scoreboard/atl.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -345,7 +227,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/_/name/bos/boston-bruins",
+                               "href":"https://www.espn.com/nfl/team/_/name/atl/atlanta-falcons",
                                "text":"Clubhouse",
                                "shortText":"Clubhouse",
                                "isExternal":false,
@@ -359,7 +241,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/roster/_/name/bos/boston-bruins",
+                               "href":"http://www.espn.com/nfl/team/roster/_/name/atl/atlanta-falcons",
                                "text":"Roster",
                                "shortText":"Roster",
                                "isExternal":false,
@@ -373,7 +255,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/stats/_/name/bos/boston-bruins",
+                               "href":"http://www.espn.com/nfl/team/stats/_/name/atl/atlanta-falcons",
                                "text":"Statistics",
                                "shortText":"Statistics",
                                "isExternal":false,
@@ -387,7 +269,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"https://www.espn.com/nhl/team/schedule/_/name/bos",
+                               "href":"https://www.espn.com/nfl/team/schedule/_/name/atl",
                                "text":"Schedule",
                                "shortText":"Schedule",
                                "isExternal":false,
@@ -401,10 +283,170 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"https://www.vividseats.com/boston-bruins-tickets--sports-nhl-hockey/performer/104?wsUser=717",
+                               "href":"https://www.vividseats.com/atlanta-falcons-tickets--sports-nfl-football/performer/51?wsUser=717",
                                "text":"Tickets",
                                "shortText":"Tickets",
                                "isExternal":true,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "depthchart",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"https://www.espn.com/nfl/team/depth/_/name/atl",
+                               "text":"Depth Chart",
+                               "shortText":"Depth Chart",
+                               "isExternal":false,
+                               "isPremium":false,
+                               "isHidden":false
+                            }
+                         ]
+                      }
+                   },
+                   {
+                      "team":{
+                         "id":"33",
+                         "uid":"s:20~l:28~t:33",
+                         "slug":"baltimore-ravens",
+                         "abbreviation":"BAL",
+                         "displayName":"Baltimore Ravens",
+                         "shortDisplayName":"Ravens",
+                         "name":"Ravens",
+                         "nickname":"Ravens",
+                         "location":"Baltimore",
+                         "color":"24135f",
+                         "alternateColor":"9a7611",
+                         "isActive":true,
+                         "isAllStar":false,
+                         "logos":[
+                            {
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/bal.png",
+                               "alt":"",
+                               "rel":[
+                                  "full",
+                                  "default"
+                               ],
+                               "width":500,
+                               "height":500
+                            },
+                            {
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/bal.png",
+                               "alt":"",
+                               "rel":[
+                                  "full",
+                                  "dark"
+                               ],
+                               "width":500,
+                               "height":500
+                            },
+                            {
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/bal.png",
+                               "alt":"",
+                               "rel":[
+                                  "full",
+                                  "scoreboard"
+                               ],
+                               "width":500,
+                               "height":500
+                            },
+                            {
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/scoreboard/bal.png",
+                               "alt":"",
+                               "rel":[
+                                  "full",
+                                  "scoreboard",
+                                  "dark"
+                               ],
+                               "width":500,
+                               "height":500
+                            }
+                         ],
+                         "links":[
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "clubhouse",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"https://www.espn.com/nfl/team/_/name/bal/baltimore-ravens",
+                               "text":"Clubhouse",
+                               "shortText":"Clubhouse",
+                               "isExternal":false,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "roster",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"http://www.espn.com/nfl/team/roster/_/name/bal/baltimore-ravens",
+                               "text":"Roster",
+                               "shortText":"Roster",
+                               "isExternal":false,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "stats",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"http://www.espn.com/nfl/team/stats/_/name/bal/baltimore-ravens",
+                               "text":"Statistics",
+                               "shortText":"Statistics",
+                               "isExternal":false,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "schedule",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"https://www.espn.com/nfl/team/schedule/_/name/bal",
+                               "text":"Schedule",
+                               "shortText":"Schedule",
+                               "isExternal":false,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "tickets",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"https://www.vividseats.com/baltimore-ravens-tickets--sports-nfl-football/performer/60?wsUser=717",
+                               "text":"Tickets",
+                               "shortText":"Tickets",
+                               "isExternal":true,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "depthchart",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"https://www.espn.com/nfl/team/depth/_/name/bal",
+                               "text":"Depth Chart",
+                               "shortText":"Depth Chart",
+                               "isExternal":false,
                                "isPremium":false,
                                "isHidden":false
                             }
@@ -414,21 +456,21 @@ export const nhlTeamData = {
                    {
                       "team":{
                          "id":"2",
-                         "uid":"s:70~l:90~t:2",
-                         "slug":"buffalo-sabres",
+                         "uid":"s:20~l:28~t:2",
+                         "slug":"buffalo-bills",
                          "abbreviation":"BUF",
-                         "displayName":"Buffalo Sabres",
-                         "shortDisplayName":"Sabres",
-                         "name":"Sabres",
-                         "nickname":"Buffalo",
+                         "displayName":"Buffalo Bills",
+                         "shortDisplayName":"Bills",
+                         "name":"Bills",
+                         "nickname":"Bills",
                          "location":"Buffalo",
-                         "color":"00468b",
-                         "alternateColor":"fdb71a",
+                         "color":"00338d",
+                         "alternateColor":"d50a0a",
                          "isActive":true,
                          "isAllStar":false,
                          "logos":[
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/buf.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/buf.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -438,7 +480,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/buf.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/buf.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -448,7 +490,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/buf.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/buf.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -458,7 +500,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/scoreboard/buf.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/scoreboard/buf.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -477,7 +519,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/_/name/buf/buffalo-sabres",
+                               "href":"https://www.espn.com/nfl/team/_/name/buf/buffalo-bills",
                                "text":"Clubhouse",
                                "shortText":"Clubhouse",
                                "isExternal":false,
@@ -491,7 +533,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/roster/_/name/buf/buffalo-sabres",
+                               "href":"http://www.espn.com/nfl/team/roster/_/name/buf/buffalo-bills",
                                "text":"Roster",
                                "shortText":"Roster",
                                "isExternal":false,
@@ -505,7 +547,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/stats/_/name/buf/buffalo-sabres",
+                               "href":"http://www.espn.com/nfl/team/stats/_/name/buf/buffalo-bills",
                                "text":"Statistics",
                                "shortText":"Statistics",
                                "isExternal":false,
@@ -519,7 +561,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"https://www.espn.com/nhl/team/schedule/_/name/buf",
+                               "href":"https://www.espn.com/nfl/team/schedule/_/name/buf",
                                "text":"Schedule",
                                "shortText":"Schedule",
                                "isExternal":false,
@@ -533,538 +575,24 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"https://www.vividseats.com/buffalo-sabres-tickets--sports-nhl-hockey/performer/129?wsUser=717",
+                               "href":"https://www.vividseats.com/buffalo-bills-tickets--sports-nfl-football/performer/128?wsUser=717",
                                "text":"Tickets",
                                "shortText":"Tickets",
                                "isExternal":true,
                                "isPremium":false,
                                "isHidden":false
-                            }
-                         ]
-                      }
-                   },
-                   {
-                      "team":{
-                         "id":"3",
-                         "uid":"s:70~l:90~t:3",
-                         "slug":"calgary-flames",
-                         "abbreviation":"CGY",
-                         "displayName":"Calgary Flames",
-                         "shortDisplayName":"Flames",
-                         "name":"Flames",
-                         "nickname":"Calgary",
-                         "location":"Calgary",
-                         "color":"dd1a32",
-                         "alternateColor":"fdbe57",
-                         "isActive":true,
-                         "isAllStar":false,
-                         "logos":[
-                            {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/cgy.png",
-                               "alt":"",
-                               "rel":[
-                                  "full",
-                                  "default"
-                               ],
-                               "width":500,
-                               "height":500
                             },
-                            {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/cgy.png",
-                               "alt":"",
-                               "rel":[
-                                  "full",
-                                  "dark"
-                               ],
-                               "width":500,
-                               "height":500
-                            },
-                            {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/cgy.png",
-                               "alt":"",
-                               "rel":[
-                                  "full",
-                                  "scoreboard"
-                               ],
-                               "width":500,
-                               "height":500
-                            },
-                            {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/scoreboard/cgy.png",
-                               "alt":"",
-                               "rel":[
-                                  "full",
-                                  "scoreboard",
-                                  "dark"
-                               ],
-                               "width":500,
-                               "height":500
-                            }
-                         ],
-                         "links":[
                             {
                                "language":"en-US",
                                "rel":[
-                                  "clubhouse",
+                                  "depthchart",
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/_/name/cgy/calgary-flames",
-                               "text":"Clubhouse",
-                               "shortText":"Clubhouse",
+                               "href":"https://www.espn.com/nfl/team/depth/_/name/buf",
+                               "text":"Depth Chart",
+                               "shortText":"Depth Chart",
                                "isExternal":false,
-                               "isPremium":false,
-                               "isHidden":false
-                            },
-                            {
-                               "language":"en-US",
-                               "rel":[
-                                  "roster",
-                                  "desktop",
-                                  "team"
-                               ],
-                               "href":"http://www.espn.com/nhl/team/roster/_/name/cgy/calgary-flames",
-                               "text":"Roster",
-                               "shortText":"Roster",
-                               "isExternal":false,
-                               "isPremium":false,
-                               "isHidden":false
-                            },
-                            {
-                               "language":"en-US",
-                               "rel":[
-                                  "stats",
-                                  "desktop",
-                                  "team"
-                               ],
-                               "href":"http://www.espn.com/nhl/team/stats/_/name/cgy/calgary-flames",
-                               "text":"Statistics",
-                               "shortText":"Statistics",
-                               "isExternal":false,
-                               "isPremium":false,
-                               "isHidden":false
-                            },
-                            {
-                               "language":"en-US",
-                               "rel":[
-                                  "schedule",
-                                  "desktop",
-                                  "team"
-                               ],
-                               "href":"https://www.espn.com/nhl/team/schedule/_/name/cgy",
-                               "text":"Schedule",
-                               "shortText":"Schedule",
-                               "isExternal":false,
-                               "isPremium":false,
-                               "isHidden":false
-                            },
-                            {
-                               "language":"en-US",
-                               "rel":[
-                                  "tickets",
-                                  "desktop",
-                                  "team"
-                               ],
-                               "href":"https://www.vividseats.com/calgary-flames-tickets--sports-nhl-hockey/performer/136?wsUser=717",
-                               "text":"Tickets",
-                               "shortText":"Tickets",
-                               "isExternal":true,
-                               "isPremium":false,
-                               "isHidden":false
-                            }
-                         ]
-                      }
-                   },
-                   {
-                      "team":{
-                         "id":"7",
-                         "uid":"s:70~l:90~t:7",
-                         "slug":"carolina-hurricanes",
-                         "abbreviation":"CAR",
-                         "displayName":"Carolina Hurricanes",
-                         "shortDisplayName":"Hurricanes",
-                         "name":"Hurricanes",
-                         "nickname":"Carolina",
-                         "location":"Carolina",
-                         "color":"e30426",
-                         "alternateColor":"000000",
-                         "isActive":true,
-                         "isAllStar":false,
-                         "logos":[
-                            {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/car.png",
-                               "alt":"",
-                               "rel":[
-                                  "full",
-                                  "default"
-                               ],
-                               "width":500,
-                               "height":500
-                            },
-                            {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/car.png",
-                               "alt":"",
-                               "rel":[
-                                  "full",
-                                  "dark"
-                               ],
-                               "width":500,
-                               "height":500
-                            },
-                            {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/car.png",
-                               "alt":"",
-                               "rel":[
-                                  "full",
-                                  "scoreboard"
-                               ],
-                               "width":500,
-                               "height":500
-                            },
-                            {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/scoreboard/car.png",
-                               "alt":"",
-                               "rel":[
-                                  "full",
-                                  "scoreboard",
-                                  "dark"
-                               ],
-                               "width":500,
-                               "height":500
-                            }
-                         ],
-                         "links":[
-                            {
-                               "language":"en-US",
-                               "rel":[
-                                  "clubhouse",
-                                  "desktop",
-                                  "team"
-                               ],
-                               "href":"http://www.espn.com/nhl/team/_/name/car/carolina-hurricanes",
-                               "text":"Clubhouse",
-                               "shortText":"Clubhouse",
-                               "isExternal":false,
-                               "isPremium":false,
-                               "isHidden":false
-                            },
-                            {
-                               "language":"en-US",
-                               "rel":[
-                                  "roster",
-                                  "desktop",
-                                  "team"
-                               ],
-                               "href":"http://www.espn.com/nhl/team/roster/_/name/car/carolina-hurricanes",
-                               "text":"Roster",
-                               "shortText":"Roster",
-                               "isExternal":false,
-                               "isPremium":false,
-                               "isHidden":false
-                            },
-                            {
-                               "language":"en-US",
-                               "rel":[
-                                  "stats",
-                                  "desktop",
-                                  "team"
-                               ],
-                               "href":"http://www.espn.com/nhl/team/stats/_/name/car/carolina-hurricanes",
-                               "text":"Statistics",
-                               "shortText":"Statistics",
-                               "isExternal":false,
-                               "isPremium":false,
-                               "isHidden":false
-                            },
-                            {
-                               "language":"en-US",
-                               "rel":[
-                                  "schedule",
-                                  "desktop",
-                                  "team"
-                               ],
-                               "href":"https://www.espn.com/nhl/team/schedule/_/name/car",
-                               "text":"Schedule",
-                               "shortText":"Schedule",
-                               "isExternal":false,
-                               "isPremium":false,
-                               "isHidden":false
-                            },
-                            {
-                               "language":"en-US",
-                               "rel":[
-                                  "tickets",
-                                  "desktop",
-                                  "team"
-                               ],
-                               "href":"https://www.vividseats.com/carolina-hurricanes-tickets--sports-nhl-hockey/performer/143?wsUser=717",
-                               "text":"Tickets",
-                               "shortText":"Tickets",
-                               "isExternal":true,
-                               "isPremium":false,
-                               "isHidden":false
-                            }
-                         ]
-                      }
-                   },
-                   {
-                      "team":{
-                         "id":"4",
-                         "uid":"s:70~l:90~t:4",
-                         "slug":"chicago-blackhawks",
-                         "abbreviation":"CHI",
-                         "displayName":"Chicago Blackhawks",
-                         "shortDisplayName":"Blackhawks",
-                         "name":"Blackhawks",
-                         "nickname":"Chicago",
-                         "location":"Chicago",
-                         "color":"e31937",
-                         "alternateColor":"000000",
-                         "isActive":true,
-                         "isAllStar":false,
-                         "logos":[
-                            {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/chi.png",
-                               "alt":"",
-                               "rel":[
-                                  "full",
-                                  "default"
-                               ],
-                               "width":500,
-                               "height":500
-                            },
-                            {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/chi.png",
-                               "alt":"",
-                               "rel":[
-                                  "full",
-                                  "dark"
-                               ],
-                               "width":500,
-                               "height":500
-                            },
-                            {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/chi.png",
-                               "alt":"",
-                               "rel":[
-                                  "full",
-                                  "scoreboard"
-                               ],
-                               "width":500,
-                               "height":500
-                            },
-                            {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/scoreboard/chi.png",
-                               "alt":"",
-                               "rel":[
-                                  "full",
-                                  "scoreboard",
-                                  "dark"
-                               ],
-                               "width":500,
-                               "height":500
-                            }
-                         ],
-                         "links":[
-                            {
-                               "language":"en-US",
-                               "rel":[
-                                  "clubhouse",
-                                  "desktop",
-                                  "team"
-                               ],
-                               "href":"http://www.espn.com/nhl/team/_/name/chi/chicago-blackhawks",
-                               "text":"Clubhouse",
-                               "shortText":"Clubhouse",
-                               "isExternal":false,
-                               "isPremium":false,
-                               "isHidden":false
-                            },
-                            {
-                               "language":"en-US",
-                               "rel":[
-                                  "roster",
-                                  "desktop",
-                                  "team"
-                               ],
-                               "href":"http://www.espn.com/nhl/team/roster/_/name/chi/chicago-blackhawks",
-                               "text":"Roster",
-                               "shortText":"Roster",
-                               "isExternal":false,
-                               "isPremium":false,
-                               "isHidden":false
-                            },
-                            {
-                               "language":"en-US",
-                               "rel":[
-                                  "stats",
-                                  "desktop",
-                                  "team"
-                               ],
-                               "href":"http://www.espn.com/nhl/team/stats/_/name/chi/chicago-blackhawks",
-                               "text":"Statistics",
-                               "shortText":"Statistics",
-                               "isExternal":false,
-                               "isPremium":false,
-                               "isHidden":false
-                            },
-                            {
-                               "language":"en-US",
-                               "rel":[
-                                  "schedule",
-                                  "desktop",
-                                  "team"
-                               ],
-                               "href":"https://www.espn.com/nhl/team/schedule/_/name/chi",
-                               "text":"Schedule",
-                               "shortText":"Schedule",
-                               "isExternal":false,
-                               "isPremium":false,
-                               "isHidden":false
-                            },
-                            {
-                               "language":"en-US",
-                               "rel":[
-                                  "tickets",
-                                  "desktop",
-                                  "team"
-                               ],
-                               "href":"https://www.vividseats.com/chicago-blackhawks-tickets--sports-nhl-hockey/performer/160?wsUser=717",
-                               "text":"Tickets",
-                               "shortText":"Tickets",
-                               "isExternal":true,
-                               "isPremium":false,
-                               "isHidden":false
-                            }
-                         ]
-                      }
-                   },
-                   {
-                      "team":{
-                         "id":"17",
-                         "uid":"s:70~l:90~t:17",
-                         "slug":"colorado-avalanche",
-                         "abbreviation":"COL",
-                         "displayName":"Colorado Avalanche",
-                         "shortDisplayName":"Avalanche",
-                         "name":"Avalanche",
-                         "nickname":"Colorado",
-                         "location":"Colorado",
-                         "color":"860038",
-                         "alternateColor":"005ea3",
-                         "isActive":true,
-                         "isAllStar":false,
-                         "logos":[
-                            {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/col.png",
-                               "alt":"",
-                               "rel":[
-                                  "full",
-                                  "default"
-                               ],
-                               "width":500,
-                               "height":500
-                            },
-                            {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/col.png",
-                               "alt":"",
-                               "rel":[
-                                  "full",
-                                  "dark"
-                               ],
-                               "width":500,
-                               "height":500
-                            },
-                            {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/col.png",
-                               "alt":"",
-                               "rel":[
-                                  "full",
-                                  "scoreboard"
-                               ],
-                               "width":500,
-                               "height":500
-                            },
-                            {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/scoreboard/col.png",
-                               "alt":"",
-                               "rel":[
-                                  "full",
-                                  "scoreboard",
-                                  "dark"
-                               ],
-                               "width":500,
-                               "height":500
-                            }
-                         ],
-                         "links":[
-                            {
-                               "language":"en-US",
-                               "rel":[
-                                  "clubhouse",
-                                  "desktop",
-                                  "team"
-                               ],
-                               "href":"http://www.espn.com/nhl/team/_/name/col/colorado-avalanche",
-                               "text":"Clubhouse",
-                               "shortText":"Clubhouse",
-                               "isExternal":false,
-                               "isPremium":false,
-                               "isHidden":false
-                            },
-                            {
-                               "language":"en-US",
-                               "rel":[
-                                  "roster",
-                                  "desktop",
-                                  "team"
-                               ],
-                               "href":"http://www.espn.com/nhl/team/roster/_/name/col/colorado-avalanche",
-                               "text":"Roster",
-                               "shortText":"Roster",
-                               "isExternal":false,
-                               "isPremium":false,
-                               "isHidden":false
-                            },
-                            {
-                               "language":"en-US",
-                               "rel":[
-                                  "stats",
-                                  "desktop",
-                                  "team"
-                               ],
-                               "href":"http://www.espn.com/nhl/team/stats/_/name/col/colorado-avalanche",
-                               "text":"Statistics",
-                               "shortText":"Statistics",
-                               "isExternal":false,
-                               "isPremium":false,
-                               "isHidden":false
-                            },
-                            {
-                               "language":"en-US",
-                               "rel":[
-                                  "schedule",
-                                  "desktop",
-                                  "team"
-                               ],
-                               "href":"https://www.espn.com/nhl/team/schedule/_/name/col",
-                               "text":"Schedule",
-                               "shortText":"Schedule",
-                               "isExternal":false,
-                               "isPremium":false,
-                               "isHidden":false
-                            },
-                            {
-                               "language":"en-US",
-                               "rel":[
-                                  "tickets",
-                                  "desktop",
-                                  "team"
-                               ],
-                               "href":"https://www.vividseats.com/colorado-avalanche-tickets--sports-nhl-hockey/performer/191?wsUser=717",
-                               "text":"Tickets",
-                               "shortText":"Tickets",
-                               "isExternal":true,
                                "isPremium":false,
                                "isHidden":false
                             }
@@ -1074,21 +602,21 @@ export const nhlTeamData = {
                    {
                       "team":{
                          "id":"29",
-                         "uid":"s:70~l:90~t:29",
-                         "slug":"columbus-blue-jackets",
-                         "abbreviation":"CBJ",
-                         "displayName":"Columbus Blue Jackets",
-                         "shortDisplayName":"Blue Jackets",
-                         "name":"Blue Jackets",
-                         "nickname":"Columbus",
-                         "location":"Columbus",
-                         "color":"002d62",
-                         "alternateColor":"e31937",
+                         "uid":"s:20~l:28~t:29",
+                         "slug":"carolina-panthers",
+                         "abbreviation":"CAR",
+                         "displayName":"Carolina Panthers",
+                         "shortDisplayName":"Panthers",
+                         "name":"Panthers",
+                         "nickname":"Panthers",
+                         "location":"Carolina",
+                         "color":"0085ca",
+                         "alternateColor":"000000",
                          "isActive":true,
                          "isAllStar":false,
                          "logos":[
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/cbj.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/car.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -1098,7 +626,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/cbj.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/car.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -1108,7 +636,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/cbj.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/car.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -1118,7 +646,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/scoreboard/cbj.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/scoreboard/car.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -1137,7 +665,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/_/name/cbj/columbus-blue-jackets",
+                               "href":"https://www.espn.com/nfl/team/_/name/car/carolina-panthers",
                                "text":"Clubhouse",
                                "shortText":"Clubhouse",
                                "isExternal":false,
@@ -1151,7 +679,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/roster/_/name/cbj/columbus-blue-jackets",
+                               "href":"http://www.espn.com/nfl/team/roster/_/name/car/carolina-panthers",
                                "text":"Roster",
                                "shortText":"Roster",
                                "isExternal":false,
@@ -1165,7 +693,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/stats/_/name/cbj/columbus-blue-jackets",
+                               "href":"http://www.espn.com/nfl/team/stats/_/name/car/carolina-panthers",
                                "text":"Statistics",
                                "shortText":"Statistics",
                                "isExternal":false,
@@ -1179,7 +707,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"https://www.espn.com/nhl/team/schedule/_/name/cbj",
+                               "href":"https://www.espn.com/nfl/team/schedule/_/name/car",
                                "text":"Schedule",
                                "shortText":"Schedule",
                                "isExternal":false,
@@ -1193,10 +721,24 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"https://www.vividseats.com/columbus-blue-jackets-tickets--sports-nhl-hockey/performer/979?wsUser=717",
+                               "href":"https://www.vividseats.com/carolina-panthers-tickets--sports-nfl-football/performer/144?wsUser=717",
                                "text":"Tickets",
                                "shortText":"Tickets",
                                "isExternal":true,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "depthchart",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"https://www.espn.com/nfl/team/depth/_/name/car",
+                               "text":"Depth Chart",
+                               "shortText":"Depth Chart",
+                               "isExternal":false,
                                "isPremium":false,
                                "isHidden":false
                             }
@@ -1205,22 +747,22 @@ export const nhlTeamData = {
                    },
                    {
                       "team":{
-                         "id":"9",
-                         "uid":"s:70~l:90~t:9",
-                         "slug":"dallas-stars",
-                         "abbreviation":"DAL",
-                         "displayName":"Dallas Stars",
-                         "shortDisplayName":"Stars",
-                         "name":"Stars",
-                         "nickname":"Dallas",
-                         "location":"Dallas",
-                         "color":"20864c",
-                         "alternateColor":"000000",
+                         "id":"3",
+                         "uid":"s:20~l:28~t:3",
+                         "slug":"chicago-bears",
+                         "abbreviation":"CHI",
+                         "displayName":"Chicago Bears",
+                         "shortDisplayName":"Bears",
+                         "name":"Bears",
+                         "nickname":"Bears",
+                         "location":"Chicago",
+                         "color":"0b1c3a",
+                         "alternateColor":"e64100",
                          "isActive":true,
                          "isAllStar":false,
                          "logos":[
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/dal.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/chi.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -1230,7 +772,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/dal.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/chi.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -1240,7 +782,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/dal.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/chi.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -1250,7 +792,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/scoreboard/dal.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/scoreboard/chi.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -1269,7 +811,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/_/name/dal/dallas-stars",
+                               "href":"https://www.espn.com/nfl/team/_/name/chi/chicago-bears",
                                "text":"Clubhouse",
                                "shortText":"Clubhouse",
                                "isExternal":false,
@@ -1283,7 +825,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/roster/_/name/dal/dallas-stars",
+                               "href":"http://www.espn.com/nfl/team/roster/_/name/chi/chicago-bears",
                                "text":"Roster",
                                "shortText":"Roster",
                                "isExternal":false,
@@ -1297,7 +839,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/stats/_/name/dal/dallas-stars",
+                               "href":"http://www.espn.com/nfl/team/stats/_/name/chi/chicago-bears",
                                "text":"Statistics",
                                "shortText":"Statistics",
                                "isExternal":false,
@@ -1311,7 +853,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"https://www.espn.com/nhl/team/schedule/_/name/dal",
+                               "href":"https://www.espn.com/nfl/team/schedule/_/name/chi",
                                "text":"Schedule",
                                "shortText":"Schedule",
                                "isExternal":false,
@@ -1325,10 +867,170 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"https://www.vividseats.com/dallas-stars-tickets--sports-nhl-hockey/performer/216?wsUser=717",
+                               "href":"https://www.vividseats.com/chicago-bears-tickets--sports-nfl-football/performer/159?wsUser=717",
                                "text":"Tickets",
                                "shortText":"Tickets",
                                "isExternal":true,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "depthchart",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"https://www.espn.com/nfl/team/depth/_/name/chi",
+                               "text":"Depth Chart",
+                               "shortText":"Depth Chart",
+                               "isExternal":false,
+                               "isPremium":false,
+                               "isHidden":false
+                            }
+                         ]
+                      }
+                   },
+                   {
+                      "team":{
+                         "id":"4",
+                         "uid":"s:20~l:28~t:4",
+                         "slug":"cincinnati-bengals",
+                         "abbreviation":"CIN",
+                         "displayName":"Cincinnati Bengals",
+                         "shortDisplayName":"Bengals",
+                         "name":"Bengals",
+                         "nickname":"Bengals",
+                         "location":"Cincinnati",
+                         "color":"fb4f14",
+                         "alternateColor":"000000",
+                         "isActive":true,
+                         "isAllStar":false,
+                         "logos":[
+                            {
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/cin.png",
+                               "alt":"",
+                               "rel":[
+                                  "full",
+                                  "default"
+                               ],
+                               "width":500,
+                               "height":500
+                            },
+                            {
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/cin.png",
+                               "alt":"",
+                               "rel":[
+                                  "full",
+                                  "dark"
+                               ],
+                               "width":500,
+                               "height":500
+                            },
+                            {
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cin.png",
+                               "alt":"",
+                               "rel":[
+                                  "full",
+                                  "scoreboard"
+                               ],
+                               "width":500,
+                               "height":500
+                            },
+                            {
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/scoreboard/cin.png",
+                               "alt":"",
+                               "rel":[
+                                  "full",
+                                  "scoreboard",
+                                  "dark"
+                               ],
+                               "width":500,
+                               "height":500
+                            }
+                         ],
+                         "links":[
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "clubhouse",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"https://www.espn.com/nfl/team/_/name/cin/cincinnati-bengals",
+                               "text":"Clubhouse",
+                               "shortText":"Clubhouse",
+                               "isExternal":false,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "roster",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"http://www.espn.com/nfl/team/roster/_/name/cin/cincinnati-bengals",
+                               "text":"Roster",
+                               "shortText":"Roster",
+                               "isExternal":false,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "stats",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"http://www.espn.com/nfl/team/stats/_/name/cin/cincinnati-bengals",
+                               "text":"Statistics",
+                               "shortText":"Statistics",
+                               "isExternal":false,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "schedule",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"https://www.espn.com/nfl/team/schedule/_/name/cin",
+                               "text":"Schedule",
+                               "shortText":"Schedule",
+                               "isExternal":false,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "tickets",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"https://www.vividseats.com/cincinnati-bengals-tickets--sports-nfl-football/performer/172?wsUser=717",
+                               "text":"Tickets",
+                               "shortText":"Tickets",
+                               "isExternal":true,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "depthchart",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"https://www.espn.com/nfl/team/depth/_/name/cin",
+                               "text":"Depth Chart",
+                               "shortText":"Depth Chart",
+                               "isExternal":false,
                                "isPremium":false,
                                "isHidden":false
                             }
@@ -1338,21 +1040,21 @@ export const nhlTeamData = {
                    {
                       "team":{
                          "id":"5",
-                         "uid":"s:70~l:90~t:5",
-                         "slug":"detroit-red-wings",
-                         "abbreviation":"DET",
-                         "displayName":"Detroit Red Wings",
-                         "shortDisplayName":"Red Wings",
-                         "name":"Red Wings",
-                         "nickname":"Detroit",
-                         "location":"Detroit",
-                         "color":"e30526",
-                         "alternateColor":"ffffff",
+                         "uid":"s:20~l:28~t:5",
+                         "slug":"cleveland-browns",
+                         "abbreviation":"CLE",
+                         "displayName":"Cleveland Browns",
+                         "shortDisplayName":"Browns",
+                         "name":"Browns",
+                         "nickname":"Browns",
+                         "location":"Cleveland",
+                         "color":"472a08",
+                         "alternateColor":"ff3c00",
                          "isActive":true,
                          "isAllStar":false,
                          "logos":[
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/det.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/cle.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -1362,7 +1064,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/det.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/cle.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -1372,7 +1074,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/det.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cle.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -1382,7 +1084,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/scoreboard/det.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/scoreboard/cle.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -1401,7 +1103,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/_/name/det/detroit-red-wings",
+                               "href":"https://www.espn.com/nfl/team/_/name/cle/cleveland-browns",
                                "text":"Clubhouse",
                                "shortText":"Clubhouse",
                                "isExternal":false,
@@ -1415,7 +1117,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/roster/_/name/det/detroit-red-wings",
+                               "href":"http://www.espn.com/nfl/team/roster/_/name/cle/cleveland-browns",
                                "text":"Roster",
                                "shortText":"Roster",
                                "isExternal":false,
@@ -1429,7 +1131,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/stats/_/name/det/detroit-red-wings",
+                               "href":"http://www.espn.com/nfl/team/stats/_/name/cle/cleveland-browns",
                                "text":"Statistics",
                                "shortText":"Statistics",
                                "isExternal":false,
@@ -1443,7 +1145,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"https://www.espn.com/nhl/team/schedule/_/name/det",
+                               "href":"https://www.espn.com/nfl/team/schedule/_/name/cle",
                                "text":"Schedule",
                                "shortText":"Schedule",
                                "isExternal":false,
@@ -1457,10 +1159,24 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"https://www.vividseats.com/detroit-red-wings-tickets--sports-nhl-hockey/performer/240?wsUser=717",
+                               "href":"https://www.vividseats.com/cleveland-browns-tickets--sports-nfl-football/performer/181?wsUser=717",
                                "text":"Tickets",
                                "shortText":"Tickets",
                                "isExternal":true,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "depthchart",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"https://www.espn.com/nfl/team/depth/_/name/cle",
+                               "text":"Depth Chart",
+                               "shortText":"Depth Chart",
+                               "isExternal":false,
                                "isPremium":false,
                                "isHidden":false
                             }
@@ -1470,21 +1186,21 @@ export const nhlTeamData = {
                    {
                       "team":{
                          "id":"6",
-                         "uid":"s:70~l:90~t:6",
-                         "slug":"edmonton-oilers",
-                         "abbreviation":"EDM",
-                         "displayName":"Edmonton Oilers",
-                         "shortDisplayName":"Oilers",
-                         "name":"Oilers",
-                         "nickname":"Edmonton",
-                         "location":"Edmonton",
-                         "color":"00205b",
-                         "alternateColor":"ff4c00",
+                         "uid":"s:20~l:28~t:6",
+                         "slug":"dallas-cowboys",
+                         "abbreviation":"DAL",
+                         "displayName":"Dallas Cowboys",
+                         "shortDisplayName":"Cowboys",
+                         "name":"Cowboys",
+                         "nickname":"Cowboys",
+                         "location":"Dallas",
+                         "color":"002a5c",
+                         "alternateColor":"b0b7bc",
                          "isActive":true,
                          "isAllStar":false,
                          "logos":[
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/edm.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/dal.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -1494,7 +1210,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/edm.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/dal.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -1504,7 +1220,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/edm.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/dal.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -1514,7 +1230,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/scoreboard/edm.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/scoreboard/dal.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -1533,7 +1249,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/_/name/edm/edmonton-oilers",
+                               "href":"https://www.espn.com/nfl/team/_/name/dal/dallas-cowboys",
                                "text":"Clubhouse",
                                "shortText":"Clubhouse",
                                "isExternal":false,
@@ -1547,7 +1263,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/roster/_/name/edm/edmonton-oilers",
+                               "href":"http://www.espn.com/nfl/team/roster/_/name/dal/dallas-cowboys",
                                "text":"Roster",
                                "shortText":"Roster",
                                "isExternal":false,
@@ -1561,7 +1277,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/stats/_/name/edm/edmonton-oilers",
+                               "href":"http://www.espn.com/nfl/team/stats/_/name/dal/dallas-cowboys",
                                "text":"Statistics",
                                "shortText":"Statistics",
                                "isExternal":false,
@@ -1575,7 +1291,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"https://www.espn.com/nhl/team/schedule/_/name/edm",
+                               "href":"https://www.espn.com/nfl/team/schedule/_/name/dal",
                                "text":"Schedule",
                                "shortText":"Schedule",
                                "isExternal":false,
@@ -1589,10 +1305,24 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"https://www.vividseats.com/edmonton-oilers-tickets--sports-nhl-hockey/performer/263?wsUser=717",
+                               "href":"https://www.vividseats.com/dallas-cowboys-tickets--sports-nfl-football/performer/214?wsUser=717",
                                "text":"Tickets",
                                "shortText":"Tickets",
                                "isExternal":true,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "depthchart",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"https://www.espn.com/nfl/team/depth/_/name/dal",
+                               "text":"Depth Chart",
+                               "shortText":"Depth Chart",
+                               "isExternal":false,
                                "isPremium":false,
                                "isHidden":false
                             }
@@ -1601,22 +1331,22 @@ export const nhlTeamData = {
                    },
                    {
                       "team":{
-                         "id":"26",
-                         "uid":"s:70~l:90~t:26",
-                         "slug":"florida-panthers",
-                         "abbreviation":"FLA",
-                         "displayName":"Florida Panthers",
-                         "shortDisplayName":"Panthers",
-                         "name":"Panthers",
-                         "nickname":"Florida",
-                         "location":"Florida",
-                         "color":"e51937",
-                         "alternateColor":"002d62",
+                         "id":"7",
+                         "uid":"s:20~l:28~t:7",
+                         "slug":"denver-broncos",
+                         "abbreviation":"DEN",
+                         "displayName":"Denver Broncos",
+                         "shortDisplayName":"Broncos",
+                         "name":"Broncos",
+                         "nickname":"Broncos",
+                         "location":"Denver",
+                         "color":"0a2343",
+                         "alternateColor":"fc4c02",
                          "isActive":true,
                          "isAllStar":false,
                          "logos":[
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/fla.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/den.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -1626,7 +1356,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/fla.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/den.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -1636,7 +1366,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/fla.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/den.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -1646,7 +1376,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/scoreboard/fla.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/scoreboard/den.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -1665,7 +1395,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/_/name/fla/florida-panthers",
+                               "href":"https://www.espn.com/nfl/team/_/name/den/denver-broncos",
                                "text":"Clubhouse",
                                "shortText":"Clubhouse",
                                "isExternal":false,
@@ -1679,7 +1409,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/roster/_/name/fla/florida-panthers",
+                               "href":"http://www.espn.com/nfl/team/roster/_/name/den/denver-broncos",
                                "text":"Roster",
                                "shortText":"Roster",
                                "isExternal":false,
@@ -1693,7 +1423,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/stats/_/name/fla/florida-panthers",
+                               "href":"http://www.espn.com/nfl/team/stats/_/name/den/denver-broncos",
                                "text":"Statistics",
                                "shortText":"Statistics",
                                "isExternal":false,
@@ -1707,7 +1437,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"https://www.espn.com/nhl/team/schedule/_/name/fla",
+                               "href":"https://www.espn.com/nfl/team/schedule/_/name/den",
                                "text":"Schedule",
                                "shortText":"Schedule",
                                "isExternal":false,
@@ -1721,10 +1451,24 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"https://www.vividseats.com/florida-panthers-tickets--sports-nhl-hockey/performer/1132?wsUser=717",
+                               "href":"https://www.vividseats.com/denver-broncos-tickets--sports-nfl-football/performer/234?wsUser=717",
                                "text":"Tickets",
                                "shortText":"Tickets",
                                "isExternal":true,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "depthchart",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"https://www.espn.com/nfl/team/depth/_/name/den",
+                               "text":"Depth Chart",
+                               "shortText":"Depth Chart",
+                               "isExternal":false,
                                "isPremium":false,
                                "isHidden":false
                             }
@@ -1734,21 +1478,21 @@ export const nhlTeamData = {
                    {
                       "team":{
                          "id":"8",
-                         "uid":"s:70~l:90~t:8",
-                         "slug":"los-angeles-kings",
-                         "abbreviation":"LA",
-                         "displayName":"Los Angeles Kings",
-                         "shortDisplayName":"Kings",
-                         "name":"Kings",
-                         "nickname":"Los Angeles",
-                         "location":"Los Angeles",
-                         "color":"000000",
-                         "alternateColor":"b0b7bc",
+                         "uid":"s:20~l:28~t:8",
+                         "slug":"detroit-lions",
+                         "abbreviation":"DET",
+                         "displayName":"Detroit Lions",
+                         "shortDisplayName":"Lions",
+                         "name":"Lions",
+                         "nickname":"Lions",
+                         "location":"Detroit",
+                         "color":"0076b6",
+                         "alternateColor":"bbbbbb",
                          "isActive":true,
                          "isAllStar":false,
                          "logos":[
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/la.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/det.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -1758,7 +1502,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/la.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/det.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -1768,7 +1512,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/la.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/det.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -1778,7 +1522,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/scoreboard/la.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/scoreboard/det.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -1797,7 +1541,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/_/name/la/los-angeles-kings",
+                               "href":"https://www.espn.com/nfl/team/_/name/det/detroit-lions",
                                "text":"Clubhouse",
                                "shortText":"Clubhouse",
                                "isExternal":false,
@@ -1811,7 +1555,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/roster/_/name/la/los-angeles-kings",
+                               "href":"http://www.espn.com/nfl/team/roster/_/name/det/detroit-lions",
                                "text":"Roster",
                                "shortText":"Roster",
                                "isExternal":false,
@@ -1825,7 +1569,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/stats/_/name/la/los-angeles-kings",
+                               "href":"http://www.espn.com/nfl/team/stats/_/name/det/detroit-lions",
                                "text":"Statistics",
                                "shortText":"Statistics",
                                "isExternal":false,
@@ -1839,7 +1583,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"https://www.espn.com/nhl/team/schedule/_/name/la",
+                               "href":"https://www.espn.com/nfl/team/schedule/_/name/det",
                                "text":"Schedule",
                                "shortText":"Schedule",
                                "isExternal":false,
@@ -1853,10 +1597,24 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"https://www.vividseats.com/los-angeles-kings-tickets--sports-nhl-hockey/performer/482?wsUser=717",
+                               "href":"https://www.vividseats.com/detroit-lions-tickets--sports-nfl-football/performer/238?wsUser=717",
                                "text":"Tickets",
                                "shortText":"Tickets",
                                "isExternal":true,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "depthchart",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"https://www.espn.com/nfl/team/depth/_/name/det",
+                               "text":"Depth Chart",
+                               "shortText":"Depth Chart",
+                               "isExternal":false,
                                "isPremium":false,
                                "isHidden":false
                             }
@@ -1865,22 +1623,22 @@ export const nhlTeamData = {
                    },
                    {
                       "team":{
-                         "id":"30",
-                         "uid":"s:70~l:90~t:30",
-                         "slug":"minnesota-wild",
-                         "abbreviation":"MIN",
-                         "displayName":"Minnesota Wild",
-                         "shortDisplayName":"Wild",
-                         "name":"Wild",
-                         "nickname":"Minnesota",
-                         "location":"Minnesota",
-                         "color":"124734",
-                         "alternateColor":"ae122a",
+                         "id":"9",
+                         "uid":"s:20~l:28~t:9",
+                         "slug":"green-bay-packers",
+                         "abbreviation":"GB",
+                         "displayName":"Green Bay Packers",
+                         "shortDisplayName":"Packers",
+                         "name":"Packers",
+                         "nickname":"Packers",
+                         "location":"Green Bay",
+                         "color":"204e32",
+                         "alternateColor":"ffb612",
                          "isActive":true,
                          "isAllStar":false,
                          "logos":[
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/min.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/gb.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -1890,7 +1648,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/min.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/gb.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -1900,7 +1658,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/min.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/gb.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -1910,7 +1668,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/scoreboard/min.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/scoreboard/gb.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -1929,7 +1687,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/_/name/min/minnesota-wild",
+                               "href":"https://www.espn.com/nfl/team/_/name/gb/green-bay-packers",
                                "text":"Clubhouse",
                                "shortText":"Clubhouse",
                                "isExternal":false,
@@ -1943,7 +1701,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/roster/_/name/min/minnesota-wild",
+                               "href":"http://www.espn.com/nfl/team/roster/_/name/gb/green-bay-packers",
                                "text":"Roster",
                                "shortText":"Roster",
                                "isExternal":false,
@@ -1957,7 +1715,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/stats/_/name/min/minnesota-wild",
+                               "href":"http://www.espn.com/nfl/team/stats/_/name/gb/green-bay-packers",
                                "text":"Statistics",
                                "shortText":"Statistics",
                                "isExternal":false,
@@ -1971,7 +1729,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"https://www.espn.com/nhl/team/schedule/_/name/min",
+                               "href":"https://www.espn.com/nfl/team/schedule/_/name/gb",
                                "text":"Schedule",
                                "shortText":"Schedule",
                                "isExternal":false,
@@ -1985,10 +1743,24 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"https://www.vividseats.com/minnesota-wild-tickets--sports-nhl-hockey/performer/1137?wsUser=717",
+                               "href":"https://www.vividseats.com/green-bay-packers-tickets--sports-nfl-football/performer/339?wsUser=717",
                                "text":"Tickets",
                                "shortText":"Tickets",
                                "isExternal":true,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "depthchart",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"https://www.espn.com/nfl/team/depth/_/name/gb",
+                               "text":"Depth Chart",
+                               "shortText":"Depth Chart",
+                               "isExternal":false,
                                "isPremium":false,
                                "isHidden":false
                             }
@@ -1997,22 +1769,22 @@ export const nhlTeamData = {
                    },
                    {
                       "team":{
-                         "id":"10",
-                         "uid":"s:70~l:90~t:10",
-                         "slug":"montreal-canadiens",
-                         "abbreviation":"MTL",
-                         "displayName":"Montreal Canadiens",
-                         "shortDisplayName":"Canadiens",
-                         "name":"Canadiens",
-                         "nickname":"Montreal",
-                         "location":"Montreal",
-                         "color":"c41230",
-                         "alternateColor":"013a81",
+                         "id":"34",
+                         "uid":"s:20~l:28~t:34",
+                         "slug":"houston-texans",
+                         "abbreviation":"HOU",
+                         "displayName":"Houston Texans",
+                         "shortDisplayName":"Texans",
+                         "name":"Texans",
+                         "nickname":"Texans",
+                         "location":"Houston",
+                         "color":"00143f",
+                         "alternateColor":"c41230",
                          "isActive":true,
                          "isAllStar":false,
                          "logos":[
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/mtl.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/hou.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -2022,7 +1794,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/mtl.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/hou.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -2032,7 +1804,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/mtl.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/hou.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -2042,7 +1814,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/scoreboard/mtl.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/scoreboard/hou.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -2061,7 +1833,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/_/name/mtl/montreal-canadiens",
+                               "href":"https://www.espn.com/nfl/team/_/name/hou/houston-texans",
                                "text":"Clubhouse",
                                "shortText":"Clubhouse",
                                "isExternal":false,
@@ -2075,7 +1847,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/roster/_/name/mtl/montreal-canadiens",
+                               "href":"http://www.espn.com/nfl/team/roster/_/name/hou/houston-texans",
                                "text":"Roster",
                                "shortText":"Roster",
                                "isExternal":false,
@@ -2089,7 +1861,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/stats/_/name/mtl/montreal-canadiens",
+                               "href":"http://www.espn.com/nfl/team/stats/_/name/hou/houston-texans",
                                "text":"Statistics",
                                "shortText":"Statistics",
                                "isExternal":false,
@@ -2103,7 +1875,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"https://www.espn.com/nhl/team/schedule/_/name/mtl",
+                               "href":"https://www.espn.com/nfl/team/schedule/_/name/hou",
                                "text":"Schedule",
                                "shortText":"Schedule",
                                "isExternal":false,
@@ -2117,142 +1889,24 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"https://www.vividseats.com/montreal-canadiens-tickets--sports-nhl-hockey/performer/559?wsUser=717",
+                               "href":"https://www.vividseats.com/houston-texans-tickets--sports-nfl-football/performer/2559?wsUser=717",
                                "text":"Tickets",
                                "shortText":"Tickets",
                                "isExternal":true,
                                "isPremium":false,
                                "isHidden":false
-                            }
-                         ]
-                      }
-                   },
-                   {
-                      "team":{
-                         "id":"27",
-                         "uid":"s:70~l:90~t:27",
-                         "slug":"nashville-predators",
-                         "abbreviation":"NSH",
-                         "displayName":"Nashville Predators",
-                         "shortDisplayName":"Predators",
-                         "name":"Predators",
-                         "nickname":"Nashville",
-                         "location":"Nashville",
-                         "color":"fdba31",
-                         "alternateColor":"002d62",
-                         "isActive":true,
-                         "isAllStar":false,
-                         "logos":[
-                            {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/nsh.png",
-                               "alt":"",
-                               "rel":[
-                                  "full",
-                                  "default"
-                               ],
-                               "width":500,
-                               "height":500
                             },
-                            {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/nsh.png",
-                               "alt":"",
-                               "rel":[
-                                  "full",
-                                  "dark"
-                               ],
-                               "width":500,
-                               "height":500
-                            },
-                            {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/nsh.png",
-                               "alt":"",
-                               "rel":[
-                                  "full",
-                                  "scoreboard"
-                               ],
-                               "width":500,
-                               "height":500
-                            },
-                            {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/scoreboard/nsh.png",
-                               "alt":"",
-                               "rel":[
-                                  "full",
-                                  "scoreboard",
-                                  "dark"
-                               ],
-                               "width":500,
-                               "height":500
-                            }
-                         ],
-                         "links":[
                             {
                                "language":"en-US",
                                "rel":[
-                                  "clubhouse",
+                                  "depthchart",
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/_/name/nsh/nashville-predators",
-                               "text":"Clubhouse",
-                               "shortText":"Clubhouse",
+                               "href":"https://www.espn.com/nfl/team/depth/_/name/hou",
+                               "text":"Depth Chart",
+                               "shortText":"Depth Chart",
                                "isExternal":false,
-                               "isPremium":false,
-                               "isHidden":false
-                            },
-                            {
-                               "language":"en-US",
-                               "rel":[
-                                  "roster",
-                                  "desktop",
-                                  "team"
-                               ],
-                               "href":"http://www.espn.com/nhl/team/roster/_/name/nsh/nashville-predators",
-                               "text":"Roster",
-                               "shortText":"Roster",
-                               "isExternal":false,
-                               "isPremium":false,
-                               "isHidden":false
-                            },
-                            {
-                               "language":"en-US",
-                               "rel":[
-                                  "stats",
-                                  "desktop",
-                                  "team"
-                               ],
-                               "href":"http://www.espn.com/nhl/team/stats/_/name/nsh/nashville-predators",
-                               "text":"Statistics",
-                               "shortText":"Statistics",
-                               "isExternal":false,
-                               "isPremium":false,
-                               "isHidden":false
-                            },
-                            {
-                               "language":"en-US",
-                               "rel":[
-                                  "schedule",
-                                  "desktop",
-                                  "team"
-                               ],
-                               "href":"https://www.espn.com/nhl/team/schedule/_/name/nsh",
-                               "text":"Schedule",
-                               "shortText":"Schedule",
-                               "isExternal":false,
-                               "isPremium":false,
-                               "isHidden":false
-                            },
-                            {
-                               "language":"en-US",
-                               "rel":[
-                                  "tickets",
-                                  "desktop",
-                                  "team"
-                               ],
-                               "href":"https://www.vividseats.com/nashville-predators-tickets--sports-nhl-hockey/performer/573?wsUser=717",
-                               "text":"Tickets",
-                               "shortText":"Tickets",
-                               "isExternal":true,
                                "isPremium":false,
                                "isHidden":false
                             }
@@ -2262,21 +1916,21 @@ export const nhlTeamData = {
                    {
                       "team":{
                          "id":"11",
-                         "uid":"s:70~l:90~t:11",
-                         "slug":"new-jersey-devils",
-                         "abbreviation":"NJ",
-                         "displayName":"New Jersey Devils",
-                         "shortDisplayName":"Devils",
-                         "name":"Devils",
-                         "nickname":"New Jersey",
-                         "location":"New Jersey",
-                         "color":"e30b2b",
-                         "alternateColor":"000000",
+                         "uid":"s:20~l:28~t:11",
+                         "slug":"indianapolis-colts",
+                         "abbreviation":"IND",
+                         "displayName":"Indianapolis Colts",
+                         "shortDisplayName":"Colts",
+                         "name":"Colts",
+                         "nickname":"Colts",
+                         "location":"Indianapolis",
+                         "color":"003b75",
+                         "alternateColor":"ffffff",
                          "isActive":true,
                          "isAllStar":false,
                          "logos":[
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/nj.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/ind.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -2286,7 +1940,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/nj.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/ind.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -2296,7 +1950,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/nj.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ind.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -2306,7 +1960,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/scoreboard/nj.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/scoreboard/ind.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -2325,7 +1979,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/_/name/nj/new-jersey-devils",
+                               "href":"https://www.espn.com/nfl/team/_/name/ind/indianapolis-colts",
                                "text":"Clubhouse",
                                "shortText":"Clubhouse",
                                "isExternal":false,
@@ -2339,7 +1993,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/roster/_/name/nj/new-jersey-devils",
+                               "href":"http://www.espn.com/nfl/team/roster/_/name/ind/indianapolis-colts",
                                "text":"Roster",
                                "shortText":"Roster",
                                "isExternal":false,
@@ -2353,7 +2007,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/stats/_/name/nj/new-jersey-devils",
+                               "href":"http://www.espn.com/nfl/team/stats/_/name/ind/indianapolis-colts",
                                "text":"Statistics",
                                "shortText":"Statistics",
                                "isExternal":false,
@@ -2367,7 +2021,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"https://www.espn.com/nhl/team/schedule/_/name/nj",
+                               "href":"https://www.espn.com/nfl/team/schedule/_/name/ind",
                                "text":"Schedule",
                                "shortText":"Schedule",
                                "isExternal":false,
@@ -2381,10 +2035,170 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"https://www.vividseats.com/new-jersey-devils-tickets--sports-nhl-hockey/performer/593?wsUser=717",
+                               "href":"https://www.vividseats.com/indianapolis-colts-tickets--sports-nfl-football/performer/370?wsUser=717",
                                "text":"Tickets",
                                "shortText":"Tickets",
                                "isExternal":true,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "depthchart",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"https://www.espn.com/nfl/team/depth/_/name/ind",
+                               "text":"Depth Chart",
+                               "shortText":"Depth Chart",
+                               "isExternal":false,
+                               "isPremium":false,
+                               "isHidden":false
+                            }
+                         ]
+                      }
+                   },
+                   {
+                      "team":{
+                         "id":"30",
+                         "uid":"s:20~l:28~t:30",
+                         "slug":"jacksonville-jaguars",
+                         "abbreviation":"JAX",
+                         "displayName":"Jacksonville Jaguars",
+                         "shortDisplayName":"Jaguars",
+                         "name":"Jaguars",
+                         "nickname":"Jaguars",
+                         "location":"Jacksonville",
+                         "color":"007487",
+                         "alternateColor":"d7a22a",
+                         "isActive":true,
+                         "isAllStar":false,
+                         "logos":[
+                            {
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/jax.png",
+                               "alt":"",
+                               "rel":[
+                                  "full",
+                                  "default"
+                               ],
+                               "width":500,
+                               "height":500
+                            },
+                            {
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/jax.png",
+                               "alt":"",
+                               "rel":[
+                                  "full",
+                                  "dark"
+                               ],
+                               "width":500,
+                               "height":500
+                            },
+                            {
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/jax.png",
+                               "alt":"",
+                               "rel":[
+                                  "full",
+                                  "scoreboard"
+                               ],
+                               "width":500,
+                               "height":500
+                            },
+                            {
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/scoreboard/jax.png",
+                               "alt":"",
+                               "rel":[
+                                  "full",
+                                  "scoreboard",
+                                  "dark"
+                               ],
+                               "width":500,
+                               "height":500
+                            }
+                         ],
+                         "links":[
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "clubhouse",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"https://www.espn.com/nfl/team/_/name/jax/jacksonville-jaguars",
+                               "text":"Clubhouse",
+                               "shortText":"Clubhouse",
+                               "isExternal":false,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "roster",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"http://www.espn.com/nfl/team/roster/_/name/jax/jacksonville-jaguars",
+                               "text":"Roster",
+                               "shortText":"Roster",
+                               "isExternal":false,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "stats",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"http://www.espn.com/nfl/team/stats/_/name/jax/jacksonville-jaguars",
+                               "text":"Statistics",
+                               "shortText":"Statistics",
+                               "isExternal":false,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "schedule",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"https://www.espn.com/nfl/team/schedule/_/name/jax",
+                               "text":"Schedule",
+                               "shortText":"Schedule",
+                               "isExternal":false,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "tickets",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"https://www.vividseats.com/jacksonville-jaguars-tickets--sports-nfl-football/performer/381?wsUser=717",
+                               "text":"Tickets",
+                               "shortText":"Tickets",
+                               "isExternal":true,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "depthchart",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"https://www.espn.com/nfl/team/depth/_/name/jax",
+                               "text":"Depth Chart",
+                               "shortText":"Depth Chart",
+                               "isExternal":false,
                                "isPremium":false,
                                "isHidden":false
                             }
@@ -2394,21 +2208,21 @@ export const nhlTeamData = {
                    {
                       "team":{
                          "id":"12",
-                         "uid":"s:70~l:90~t:12",
-                         "slug":"new-york-islanders",
-                         "abbreviation":"NYI",
-                         "displayName":"New York Islanders",
-                         "shortDisplayName":"Islanders",
-                         "name":"Islanders",
-                         "nickname":"New York",
-                         "location":"New York",
-                         "color":"00529b",
-                         "alternateColor":"f47d31",
+                         "uid":"s:20~l:28~t:12",
+                         "slug":"kansas-city-chiefs",
+                         "abbreviation":"KC",
+                         "displayName":"Kansas City Chiefs",
+                         "shortDisplayName":"Chiefs",
+                         "name":"Chiefs",
+                         "nickname":"Chiefs",
+                         "location":"Kansas City",
+                         "color":"e31837",
+                         "alternateColor":"ffb612",
                          "isActive":true,
                          "isAllStar":false,
                          "logos":[
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/nyi.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/kc.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -2418,7 +2232,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/nyi.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/kc.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -2428,7 +2242,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/nyi.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/kc.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -2438,7 +2252,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/scoreboard/nyi.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/scoreboard/kc.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -2457,7 +2271,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/_/name/nyi/new-york-islanders",
+                               "href":"https://www.espn.com/nfl/team/_/name/kc/kansas-city-chiefs",
                                "text":"Clubhouse",
                                "shortText":"Clubhouse",
                                "isExternal":false,
@@ -2471,7 +2285,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/roster/_/name/nyi/new-york-islanders",
+                               "href":"http://www.espn.com/nfl/team/roster/_/name/kc/kansas-city-chiefs",
                                "text":"Roster",
                                "shortText":"Roster",
                                "isExternal":false,
@@ -2485,7 +2299,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/stats/_/name/nyi/new-york-islanders",
+                               "href":"http://www.espn.com/nfl/team/stats/_/name/kc/kansas-city-chiefs",
                                "text":"Statistics",
                                "shortText":"Statistics",
                                "isExternal":false,
@@ -2499,7 +2313,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"https://www.espn.com/nhl/team/schedule/_/name/nyi",
+                               "href":"https://www.espn.com/nfl/team/schedule/_/name/kc",
                                "text":"Schedule",
                                "shortText":"Schedule",
                                "isExternal":false,
@@ -2513,10 +2327,24 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"https://www.vividseats.com/new-york-islanders-tickets--sports-nhl-hockey/performer/600?wsUser=717",
+                               "href":"https://www.vividseats.com/kansas-city-chiefs-tickets--sports-nfl-football/performer/427?wsUser=717",
                                "text":"Tickets",
                                "shortText":"Tickets",
                                "isExternal":true,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "depthchart",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"https://www.espn.com/nfl/team/depth/_/name/kc",
+                               "text":"Depth Chart",
+                               "shortText":"Depth Chart",
+                               "isExternal":false,
                                "isPremium":false,
                                "isHidden":false
                             }
@@ -2526,21 +2354,21 @@ export const nhlTeamData = {
                    {
                       "team":{
                          "id":"13",
-                         "uid":"s:70~l:90~t:13",
-                         "slug":"new-york-rangers",
-                         "abbreviation":"NYR",
-                         "displayName":"New York Rangers",
-                         "shortDisplayName":"Rangers",
-                         "name":"Rangers",
-                         "nickname":"New York",
-                         "location":"New York",
-                         "color":"0056ae",
-                         "alternateColor":"e51937",
+                         "uid":"s:20~l:28~t:13",
+                         "slug":"las-vegas-raiders",
+                         "abbreviation":"LV",
+                         "displayName":"Las Vegas Raiders",
+                         "shortDisplayName":"Raiders",
+                         "name":"Raiders",
+                         "nickname":"Raiders",
+                         "location":"Las Vegas",
+                         "color":"000000",
+                         "alternateColor":"a5acaf",
                          "isActive":true,
                          "isAllStar":false,
                          "logos":[
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/nyr.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/lv.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -2550,7 +2378,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/nyr.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/lv.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -2560,7 +2388,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/nyr.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lv.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -2570,7 +2398,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/scoreboard/nyr.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/scoreboard/lv.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -2589,7 +2417,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/_/name/nyr/new-york-rangers",
+                               "href":"https://www.espn.com/nfl/team/_/name/lv/las-vegas-raiders",
                                "text":"Clubhouse",
                                "shortText":"Clubhouse",
                                "isExternal":false,
@@ -2603,7 +2431,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/roster/_/name/nyr/new-york-rangers",
+                               "href":"http://www.espn.com/nfl/team/roster/_/name/lv/las-vegas-raiders",
                                "text":"Roster",
                                "shortText":"Roster",
                                "isExternal":false,
@@ -2617,7 +2445,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/stats/_/name/nyr/new-york-rangers",
+                               "href":"http://www.espn.com/nfl/team/stats/_/name/lv/las-vegas-raiders",
                                "text":"Statistics",
                                "shortText":"Statistics",
                                "isExternal":false,
@@ -2631,7 +2459,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"https://www.espn.com/nhl/team/schedule/_/name/nyr",
+                               "href":"https://www.espn.com/nfl/team/schedule/_/name/lv",
                                "text":"Schedule",
                                "shortText":"Schedule",
                                "isExternal":false,
@@ -2645,10 +2473,170 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"https://www.vividseats.com/new-york-rangers-tickets--sports-nhl-hockey/performer/606?wsUser=717",
+                               "href":"https://www.vividseats.com/las-vegas-raiders-tickets--sports-nfl-football/performer/626?wsUser=717",
                                "text":"Tickets",
                                "shortText":"Tickets",
                                "isExternal":true,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "depthchart",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"https://www.espn.com/nfl/team/depth/_/name/lv",
+                               "text":"Depth Chart",
+                               "shortText":"Depth Chart",
+                               "isExternal":false,
+                               "isPremium":false,
+                               "isHidden":false
+                            }
+                         ]
+                      }
+                   },
+                   {
+                      "team":{
+                         "id":"24",
+                         "uid":"s:20~l:28~t:24",
+                         "slug":"los-angeles-chargers",
+                         "abbreviation":"LAC",
+                         "displayName":"Los Angeles Chargers",
+                         "shortDisplayName":"Chargers",
+                         "name":"Chargers",
+                         "nickname":"Chargers",
+                         "location":"Los Angeles",
+                         "color":"0080c6",
+                         "alternateColor":"ffc20e",
+                         "isActive":true,
+                         "isAllStar":false,
+                         "logos":[
+                            {
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/lac.png",
+                               "alt":"",
+                               "rel":[
+                                  "full",
+                                  "default"
+                               ],
+                               "width":500,
+                               "height":500
+                            },
+                            {
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/lac.png",
+                               "alt":"",
+                               "rel":[
+                                  "full",
+                                  "dark"
+                               ],
+                               "width":500,
+                               "height":500
+                            },
+                            {
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lac.png",
+                               "alt":"",
+                               "rel":[
+                                  "full",
+                                  "scoreboard"
+                               ],
+                               "width":500,
+                               "height":500
+                            },
+                            {
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/scoreboard/lac.png",
+                               "alt":"",
+                               "rel":[
+                                  "full",
+                                  "scoreboard",
+                                  "dark"
+                               ],
+                               "width":500,
+                               "height":500
+                            }
+                         ],
+                         "links":[
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "clubhouse",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"https://www.espn.com/nfl/team/_/name/lac/los-angeles-chargers",
+                               "text":"Clubhouse",
+                               "shortText":"Clubhouse",
+                               "isExternal":false,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "roster",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"http://www.espn.com/nfl/team/roster/_/name/lac/los-angeles-chargers",
+                               "text":"Roster",
+                               "shortText":"Roster",
+                               "isExternal":false,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "stats",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"http://www.espn.com/nfl/team/stats/_/name/lac/los-angeles-chargers",
+                               "text":"Statistics",
+                               "shortText":"Statistics",
+                               "isExternal":false,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "schedule",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"https://www.espn.com/nfl/team/schedule/_/name/lac",
+                               "text":"Schedule",
+                               "shortText":"Schedule",
+                               "isExternal":false,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "tickets",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"https://www.vividseats.com/los-angeles-chargers-tickets--sports-nfl-football/performer/755?wsUser=717",
+                               "text":"Tickets",
+                               "shortText":"Tickets",
+                               "isExternal":true,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "depthchart",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"https://www.espn.com/nfl/team/depth/_/name/lac",
+                               "text":"Depth Chart",
+                               "shortText":"Depth Chart",
+                               "isExternal":false,
                                "isPremium":false,
                                "isHidden":false
                             }
@@ -2658,21 +2646,21 @@ export const nhlTeamData = {
                    {
                       "team":{
                          "id":"14",
-                         "uid":"s:70~l:90~t:14",
-                         "slug":"ottawa-senators",
-                         "abbreviation":"OTT",
-                         "displayName":"Ottawa Senators",
-                         "shortDisplayName":"Senators",
-                         "name":"Senators",
-                         "nickname":"Ottawa",
-                         "location":"Ottawa",
-                         "color":"dd1a32",
-                         "alternateColor":"b79257",
+                         "uid":"s:20~l:28~t:14",
+                         "slug":"los-angeles-rams",
+                         "abbreviation":"LAR",
+                         "displayName":"Los Angeles Rams",
+                         "shortDisplayName":"Rams",
+                         "name":"Rams",
+                         "nickname":"Rams",
+                         "location":"Los Angeles",
+                         "color":"003594",
+                         "alternateColor":"ffd100",
                          "isActive":true,
                          "isAllStar":false,
                          "logos":[
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/ott.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/lar.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -2682,7 +2670,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/ott.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/lar.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -2692,7 +2680,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/ott.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lar.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -2702,7 +2690,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/scoreboard/ott.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/scoreboard/lar.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -2721,7 +2709,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/_/name/ott/ottawa-senators",
+                               "href":"https://www.espn.com/nfl/team/_/name/lar/los-angeles-rams",
                                "text":"Clubhouse",
                                "shortText":"Clubhouse",
                                "isExternal":false,
@@ -2735,7 +2723,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/roster/_/name/ott/ottawa-senators",
+                               "href":"http://www.espn.com/nfl/team/roster/_/name/lar/los-angeles-rams",
                                "text":"Roster",
                                "shortText":"Roster",
                                "isExternal":false,
@@ -2749,7 +2737,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/stats/_/name/ott/ottawa-senators",
+                               "href":"http://www.espn.com/nfl/team/stats/_/name/lar/los-angeles-rams",
                                "text":"Statistics",
                                "shortText":"Statistics",
                                "isExternal":false,
@@ -2763,7 +2751,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"https://www.espn.com/nhl/team/schedule/_/name/ott",
+                               "href":"https://www.espn.com/nfl/team/schedule/_/name/lar",
                                "text":"Schedule",
                                "shortText":"Schedule",
                                "isExternal":false,
@@ -2777,10 +2765,24 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"https://www.vividseats.com/ottawa-senators-tickets--sports-nhl-hockey/performer/639?wsUser=717",
+                               "href":"https://www.vividseats.com/los-angeles-rams-tickets--sports-nfl-football/performer/808?wsUser=717",
                                "text":"Tickets",
                                "shortText":"Tickets",
                                "isExternal":true,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "depthchart",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"https://www.espn.com/nfl/team/depth/_/name/lar",
+                               "text":"Depth Chart",
+                               "shortText":"Depth Chart",
+                               "isExternal":false,
                                "isPremium":false,
                                "isHidden":false
                             }
@@ -2790,21 +2792,21 @@ export const nhlTeamData = {
                    {
                       "team":{
                          "id":"15",
-                         "uid":"s:70~l:90~t:15",
-                         "slug":"philadelphia-flyers",
-                         "abbreviation":"PHI",
-                         "displayName":"Philadelphia Flyers",
-                         "shortDisplayName":"Flyers",
-                         "name":"Flyers",
-                         "nickname":"Philadelphia",
-                         "location":"Philadelphia",
-                         "color":"d1673a",
-                         "alternateColor":"000000",
+                         "uid":"s:20~l:28~t:15",
+                         "slug":"miami-dolphins",
+                         "abbreviation":"MIA",
+                         "displayName":"Miami Dolphins",
+                         "shortDisplayName":"Dolphins",
+                         "name":"Dolphins",
+                         "nickname":"Dolphins",
+                         "location":"Miami",
+                         "color":"008e97",
+                         "alternateColor":"fc4c02",
                          "isActive":true,
                          "isAllStar":false,
                          "logos":[
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/phi.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/mia.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -2814,7 +2816,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/phi.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/mia.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -2824,7 +2826,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/phi.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/mia.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -2834,7 +2836,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/scoreboard/phi.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/scoreboard/mia.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -2853,7 +2855,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/_/name/phi/philadelphia-flyers",
+                               "href":"https://www.espn.com/nfl/team/_/name/mia/miami-dolphins",
                                "text":"Clubhouse",
                                "shortText":"Clubhouse",
                                "isExternal":false,
@@ -2867,7 +2869,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/roster/_/name/phi/philadelphia-flyers",
+                               "href":"http://www.espn.com/nfl/team/roster/_/name/mia/miami-dolphins",
                                "text":"Roster",
                                "shortText":"Roster",
                                "isExternal":false,
@@ -2881,7 +2883,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/stats/_/name/phi/philadelphia-flyers",
+                               "href":"http://www.espn.com/nfl/team/stats/_/name/mia/miami-dolphins",
                                "text":"Statistics",
                                "shortText":"Statistics",
                                "isExternal":false,
@@ -2895,7 +2897,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"https://www.espn.com/nhl/team/schedule/_/name/phi",
+                               "href":"https://www.espn.com/nfl/team/schedule/_/name/mia",
                                "text":"Schedule",
                                "shortText":"Schedule",
                                "isExternal":false,
@@ -2909,10 +2911,24 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"https://www.vividseats.com/philadelphia-flyers-tickets--sports-nhl-hockey/performer/670?wsUser=717",
+                               "href":"https://www.vividseats.com/miami-dolphins-tickets--sports-nfl-football/performer/532?wsUser=717",
                                "text":"Tickets",
                                "shortText":"Tickets",
                                "isExternal":true,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "depthchart",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"https://www.espn.com/nfl/team/depth/_/name/mia",
+                               "text":"Depth Chart",
+                               "shortText":"Depth Chart",
+                               "isExternal":false,
                                "isPremium":false,
                                "isHidden":false
                             }
@@ -2922,21 +2938,21 @@ export const nhlTeamData = {
                    {
                       "team":{
                          "id":"16",
-                         "uid":"s:70~l:90~t:16",
-                         "slug":"pittsburgh-penguins",
-                         "abbreviation":"PIT",
-                         "displayName":"Pittsburgh Penguins",
-                         "shortDisplayName":"Penguins",
-                         "name":"Penguins",
-                         "nickname":"Pittsburgh",
-                         "location":"Pittsburgh",
-                         "color":"000000",
-                         "alternateColor":"fdb71a",
+                         "uid":"s:20~l:28~t:16",
+                         "slug":"minnesota-vikings",
+                         "abbreviation":"MIN",
+                         "displayName":"Minnesota Vikings",
+                         "shortDisplayName":"Vikings",
+                         "name":"Vikings",
+                         "nickname":"Vikings",
+                         "location":"Minnesota",
+                         "color":"4f2683",
+                         "alternateColor":"ffc62f",
                          "isActive":true,
                          "isAllStar":false,
                          "logos":[
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/pit.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/min.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -2946,7 +2962,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/pit.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/min.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -2956,7 +2972,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/pit.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/min.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -2966,7 +2982,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/scoreboard/pit.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/scoreboard/min.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -2985,7 +3001,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/_/name/pit/pittsburgh-penguins",
+                               "href":"https://www.espn.com/nfl/team/_/name/min/minnesota-vikings",
                                "text":"Clubhouse",
                                "shortText":"Clubhouse",
                                "isExternal":false,
@@ -2999,7 +3015,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/roster/_/name/pit/pittsburgh-penguins",
+                               "href":"http://www.espn.com/nfl/team/roster/_/name/min/minnesota-vikings",
                                "text":"Roster",
                                "shortText":"Roster",
                                "isExternal":false,
@@ -3013,7 +3029,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/stats/_/name/pit/pittsburgh-penguins",
+                               "href":"http://www.espn.com/nfl/team/stats/_/name/min/minnesota-vikings",
                                "text":"Statistics",
                                "shortText":"Statistics",
                                "isExternal":false,
@@ -3027,7 +3043,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"https://www.espn.com/nhl/team/schedule/_/name/pit",
+                               "href":"https://www.espn.com/nfl/team/schedule/_/name/min",
                                "text":"Schedule",
                                "shortText":"Schedule",
                                "isExternal":false,
@@ -3041,10 +3057,170 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"https://www.vividseats.com/pittsburgh-penguins-tickets--sports-nhl-hockey/performer/684?wsUser=717",
+                               "href":"https://www.vividseats.com/minnesota-vikings-tickets--sports-nfl-football/performer/555?wsUser=717",
                                "text":"Tickets",
                                "shortText":"Tickets",
                                "isExternal":true,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "depthchart",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"https://www.espn.com/nfl/team/depth/_/name/min",
+                               "text":"Depth Chart",
+                               "shortText":"Depth Chart",
+                               "isExternal":false,
+                               "isPremium":false,
+                               "isHidden":false
+                            }
+                         ]
+                      }
+                   },
+                   {
+                      "team":{
+                         "id":"17",
+                         "uid":"s:20~l:28~t:17",
+                         "slug":"new-england-patriots",
+                         "abbreviation":"NE",
+                         "displayName":"New England Patriots",
+                         "shortDisplayName":"Patriots",
+                         "name":"Patriots",
+                         "nickname":"Patriots",
+                         "location":"New England",
+                         "color":"002a5c",
+                         "alternateColor":"c60c30",
+                         "isActive":true,
+                         "isAllStar":false,
+                         "logos":[
+                            {
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/ne.png",
+                               "alt":"",
+                               "rel":[
+                                  "full",
+                                  "default"
+                               ],
+                               "width":500,
+                               "height":500
+                            },
+                            {
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/ne.png",
+                               "alt":"",
+                               "rel":[
+                                  "full",
+                                  "dark"
+                               ],
+                               "width":500,
+                               "height":500
+                            },
+                            {
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ne.png",
+                               "alt":"",
+                               "rel":[
+                                  "full",
+                                  "scoreboard"
+                               ],
+                               "width":500,
+                               "height":500
+                            },
+                            {
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/scoreboard/ne.png",
+                               "alt":"",
+                               "rel":[
+                                  "full",
+                                  "scoreboard",
+                                  "dark"
+                               ],
+                               "width":500,
+                               "height":500
+                            }
+                         ],
+                         "links":[
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "clubhouse",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"https://www.espn.com/nfl/team/_/name/ne/new-england-patriots",
+                               "text":"Clubhouse",
+                               "shortText":"Clubhouse",
+                               "isExternal":false,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "roster",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"http://www.espn.com/nfl/team/roster/_/name/ne/new-england-patriots",
+                               "text":"Roster",
+                               "shortText":"Roster",
+                               "isExternal":false,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "stats",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"http://www.espn.com/nfl/team/stats/_/name/ne/new-england-patriots",
+                               "text":"Statistics",
+                               "shortText":"Statistics",
+                               "isExternal":false,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "schedule",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"https://www.espn.com/nfl/team/schedule/_/name/ne",
+                               "text":"Schedule",
+                               "shortText":"Schedule",
+                               "isExternal":false,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "tickets",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"https://www.vividseats.com/new-england-patriots-tickets--sports-nfl-football/performer/592?wsUser=717",
+                               "text":"Tickets",
+                               "shortText":"Tickets",
+                               "isExternal":true,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "depthchart",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"https://www.espn.com/nfl/team/depth/_/name/ne",
+                               "text":"Depth Chart",
+                               "shortText":"Depth Chart",
+                               "isExternal":false,
                                "isPremium":false,
                                "isHidden":false
                             }
@@ -3054,21 +3230,21 @@ export const nhlTeamData = {
                    {
                       "team":{
                          "id":"18",
-                         "uid":"s:70~l:90~t:18",
-                         "slug":"san-jose-sharks",
-                         "abbreviation":"SJ",
-                         "displayName":"San Jose Sharks",
-                         "shortDisplayName":"Sharks",
-                         "name":"Sharks",
-                         "nickname":"San Jose",
-                         "location":"San Jose",
-                         "color":"00788a",
-                         "alternateColor":"070707",
+                         "uid":"s:20~l:28~t:18",
+                         "slug":"new-orleans-saints",
+                         "abbreviation":"NO",
+                         "displayName":"New Orleans Saints",
+                         "shortDisplayName":"Saints",
+                         "name":"Saints",
+                         "nickname":"Saints",
+                         "location":"New Orleans",
+                         "color":"d3bc8d",
+                         "alternateColor":"000000",
                          "isActive":true,
                          "isAllStar":false,
                          "logos":[
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/sj.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/no.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -3078,7 +3254,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/sj.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/no.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -3088,7 +3264,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/sj.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/no.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -3098,7 +3274,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/scoreboard/sj.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/scoreboard/no.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -3117,7 +3293,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/_/name/sj/san-jose-sharks",
+                               "href":"https://www.espn.com/nfl/team/_/name/no/new-orleans-saints",
                                "text":"Clubhouse",
                                "shortText":"Clubhouse",
                                "isExternal":false,
@@ -3131,7 +3307,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/roster/_/name/sj/san-jose-sharks",
+                               "href":"http://www.espn.com/nfl/team/roster/_/name/no/new-orleans-saints",
                                "text":"Roster",
                                "shortText":"Roster",
                                "isExternal":false,
@@ -3145,7 +3321,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/stats/_/name/sj/san-jose-sharks",
+                               "href":"http://www.espn.com/nfl/team/stats/_/name/no/new-orleans-saints",
                                "text":"Statistics",
                                "shortText":"Statistics",
                                "isExternal":false,
@@ -3159,7 +3335,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"https://www.espn.com/nhl/team/schedule/_/name/sj",
+                               "href":"https://www.espn.com/nfl/team/schedule/_/name/no",
                                "text":"Schedule",
                                "shortText":"Schedule",
                                "isExternal":false,
@@ -3173,142 +3349,24 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"https://www.vividseats.com/san-jose-sharks-tickets--sports-nhl-hockey/performer/761?wsUser=717",
+                               "href":"https://www.vividseats.com/new-orleans-saints-tickets--sports-nfl-football/performer/597?wsUser=717",
                                "text":"Tickets",
                                "shortText":"Tickets",
                                "isExternal":true,
                                "isPremium":false,
                                "isHidden":false
-                            }
-                         ]
-                      }
-                   },
-                   {
-                      "team":{
-                         "id":"124292",
-                         "uid":"s:70~l:90~t:124292",
-                         "slug":"seattle-kraken",
-                         "abbreviation":"SEA",
-                         "displayName":"Seattle Kraken",
-                         "shortDisplayName":"Kraken",
-                         "name":"Kraken",
-                         "nickname":"Seattle",
-                         "location":"Seattle",
-                         "color":"000d33",
-                         "alternateColor":"a3dce4",
-                         "isActive":true,
-                         "isAllStar":false,
-                         "logos":[
-                            {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/sea.png",
-                               "alt":"",
-                               "rel":[
-                                  "full",
-                                  "default"
-                               ],
-                               "width":500,
-                               "height":500
                             },
-                            {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/sea.png",
-                               "alt":"",
-                               "rel":[
-                                  "full",
-                                  "dark"
-                               ],
-                               "width":500,
-                               "height":500
-                            },
-                            {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/sea.png",
-                               "alt":"",
-                               "rel":[
-                                  "full",
-                                  "scoreboard"
-                               ],
-                               "width":500,
-                               "height":500
-                            },
-                            {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/scoreboard/sea.png",
-                               "alt":"",
-                               "rel":[
-                                  "full",
-                                  "scoreboard",
-                                  "dark"
-                               ],
-                               "width":500,
-                               "height":500
-                            }
-                         ],
-                         "links":[
                             {
                                "language":"en-US",
                                "rel":[
-                                  "clubhouse",
+                                  "depthchart",
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/_/name/sea/seattle-kraken",
-                               "text":"Clubhouse",
-                               "shortText":"Clubhouse",
+                               "href":"https://www.espn.com/nfl/team/depth/_/name/no",
+                               "text":"Depth Chart",
+                               "shortText":"Depth Chart",
                                "isExternal":false,
-                               "isPremium":false,
-                               "isHidden":false
-                            },
-                            {
-                               "language":"en-US",
-                               "rel":[
-                                  "roster",
-                                  "desktop",
-                                  "team"
-                               ],
-                               "href":"http://www.espn.com/nhl/team/roster/_/name/sea/seattle-kraken",
-                               "text":"Roster",
-                               "shortText":"Roster",
-                               "isExternal":false,
-                               "isPremium":false,
-                               "isHidden":false
-                            },
-                            {
-                               "language":"en-US",
-                               "rel":[
-                                  "stats",
-                                  "desktop",
-                                  "team"
-                               ],
-                               "href":"http://www.espn.com/nhl/team/stats/_/name/sea/seattle-kraken",
-                               "text":"Statistics",
-                               "shortText":"Statistics",
-                               "isExternal":false,
-                               "isPremium":false,
-                               "isHidden":false
-                            },
-                            {
-                               "language":"en-US",
-                               "rel":[
-                                  "schedule",
-                                  "desktop",
-                                  "team"
-                               ],
-                               "href":"https://www.espn.com/nhl/team/schedule/_/name/sea",
-                               "text":"Schedule",
-                               "shortText":"Schedule",
-                               "isExternal":false,
-                               "isPremium":false,
-                               "isHidden":false
-                            },
-                            {
-                               "language":"en-US",
-                               "rel":[
-                                  "tickets",
-                                  "desktop",
-                                  "team"
-                               ],
-                               "href":"https://www.vividseats.com/seattle-kraken-tickets--sports-nhl-hockey/performer/129459?wsUser=717",
-                               "text":"Tickets",
-                               "shortText":"Tickets",
-                               "isExternal":true,
                                "isPremium":false,
                                "isHidden":false
                             }
@@ -3318,21 +3376,21 @@ export const nhlTeamData = {
                    {
                       "team":{
                          "id":"19",
-                         "uid":"s:70~l:90~t:19",
-                         "slug":"st-louis-blues",
-                         "abbreviation":"STL",
-                         "displayName":"St. Louis Blues",
-                         "shortDisplayName":"Blues",
-                         "name":"Blues",
-                         "nickname":"St. Louis",
-                         "location":"St. Louis",
-                         "color":"00468b",
-                         "alternateColor":"fdb71a",
+                         "uid":"s:20~l:28~t:19",
+                         "slug":"new-york-giants",
+                         "abbreviation":"NYG",
+                         "displayName":"New York Giants",
+                         "shortDisplayName":"Giants",
+                         "name":"Giants",
+                         "nickname":"Giants",
+                         "location":"New York",
+                         "color":"003c7f",
+                         "alternateColor":"c9243f",
                          "isActive":true,
                          "isAllStar":false,
                          "logos":[
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/stl.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/nyg.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -3342,7 +3400,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/stl.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/nyg.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -3352,7 +3410,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/stl.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyg.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -3362,7 +3420,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/scoreboard/stl.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/scoreboard/nyg.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -3381,7 +3439,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/_/name/stl/st-louis-blues",
+                               "href":"https://www.espn.com/nfl/team/_/name/nyg/new-york-giants",
                                "text":"Clubhouse",
                                "shortText":"Clubhouse",
                                "isExternal":false,
@@ -3395,7 +3453,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/roster/_/name/stl/st-louis-blues",
+                               "href":"http://www.espn.com/nfl/team/roster/_/name/nyg/new-york-giants",
                                "text":"Roster",
                                "shortText":"Roster",
                                "isExternal":false,
@@ -3409,7 +3467,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/stats/_/name/stl/st-louis-blues",
+                               "href":"http://www.espn.com/nfl/team/stats/_/name/nyg/new-york-giants",
                                "text":"Statistics",
                                "shortText":"Statistics",
                                "isExternal":false,
@@ -3423,7 +3481,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"https://www.espn.com/nhl/team/schedule/_/name/stl",
+                               "href":"https://www.espn.com/nfl/team/schedule/_/name/nyg",
                                "text":"Schedule",
                                "shortText":"Schedule",
                                "isExternal":false,
@@ -3437,10 +3495,24 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"https://www.vividseats.com/st-louis-blues-tickets--sports-nhl-hockey/performer/806?wsUser=717",
+                               "href":"https://www.vividseats.com/new-york-giants-tickets--sports-nfl-football/performer/599?wsUser=717",
                                "text":"Tickets",
                                "shortText":"Tickets",
                                "isExternal":true,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "depthchart",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"https://www.espn.com/nfl/team/depth/_/name/nyg",
+                               "text":"Depth Chart",
+                               "shortText":"Depth Chart",
+                               "isExternal":false,
                                "isPremium":false,
                                "isHidden":false
                             }
@@ -3450,21 +3522,21 @@ export const nhlTeamData = {
                    {
                       "team":{
                          "id":"20",
-                         "uid":"s:70~l:90~t:20",
-                         "slug":"tampa-bay-lightning",
-                         "abbreviation":"TB",
-                         "displayName":"Tampa Bay Lightning",
-                         "shortDisplayName":"Lightning",
-                         "name":"Lightning",
-                         "nickname":"Tampa Bay",
-                         "location":"Tampa Bay",
-                         "color":"003e7e",
+                         "uid":"s:20~l:28~t:20",
+                         "slug":"new-york-jets",
+                         "abbreviation":"NYJ",
+                         "displayName":"New York Jets",
+                         "shortDisplayName":"Jets",
+                         "name":"Jets",
+                         "nickname":"Jets",
+                         "location":"New York",
+                         "color":"115740",
                          "alternateColor":"ffffff",
                          "isActive":true,
                          "isAllStar":false,
                          "logos":[
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/tb.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/nyj.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -3474,7 +3546,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/tb.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/nyj.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -3484,7 +3556,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/tb.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyj.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -3494,7 +3566,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/scoreboard/tb.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/scoreboard/nyj.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -3513,7 +3585,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/_/name/tb/tampa-bay-lightning",
+                               "href":"https://www.espn.com/nfl/team/_/name/nyj/new-york-jets",
                                "text":"Clubhouse",
                                "shortText":"Clubhouse",
                                "isExternal":false,
@@ -3527,7 +3599,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/roster/_/name/tb/tampa-bay-lightning",
+                               "href":"http://www.espn.com/nfl/team/roster/_/name/nyj/new-york-jets",
                                "text":"Roster",
                                "shortText":"Roster",
                                "isExternal":false,
@@ -3541,7 +3613,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/stats/_/name/tb/tampa-bay-lightning",
+                               "href":"http://www.espn.com/nfl/team/stats/_/name/nyj/new-york-jets",
                                "text":"Statistics",
                                "shortText":"Statistics",
                                "isExternal":false,
@@ -3555,7 +3627,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"https://www.espn.com/nhl/team/schedule/_/name/tb",
+                               "href":"https://www.espn.com/nfl/team/schedule/_/name/nyj",
                                "text":"Schedule",
                                "shortText":"Schedule",
                                "isExternal":false,
@@ -3569,10 +3641,24 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"https://www.vividseats.com/tampa-bay-lightning-tickets--sports-nhl-hockey/performer/841?wsUser=717",
+                               "href":"https://www.vividseats.com/new-york-jets-tickets--sports-nfl-football/performer/601?wsUser=717",
                                "text":"Tickets",
                                "shortText":"Tickets",
                                "isExternal":true,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "depthchart",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"https://www.espn.com/nfl/team/depth/_/name/nyj",
+                               "text":"Depth Chart",
+                               "shortText":"Depth Chart",
+                               "isExternal":false,
                                "isPremium":false,
                                "isHidden":false
                             }
@@ -3582,21 +3668,21 @@ export const nhlTeamData = {
                    {
                       "team":{
                          "id":"21",
-                         "uid":"s:70~l:90~t:21",
-                         "slug":"toronto-maple-leafs",
-                         "abbreviation":"TOR",
-                         "displayName":"Toronto Maple Leafs",
-                         "shortDisplayName":"Maple Leafs",
-                         "name":"Maple Leafs",
-                         "nickname":"Toronto",
-                         "location":"Toronto",
-                         "color":"003e7e",
-                         "alternateColor":"ffffff",
+                         "uid":"s:20~l:28~t:21",
+                         "slug":"philadelphia-eagles",
+                         "abbreviation":"PHI",
+                         "displayName":"Philadelphia Eagles",
+                         "shortDisplayName":"Eagles",
+                         "name":"Eagles",
+                         "nickname":"Eagles",
+                         "location":"Philadelphia",
+                         "color":"06424d",
+                         "alternateColor":"a2aaad",
                          "isActive":true,
                          "isAllStar":false,
                          "logos":[
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/tor.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/phi.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -3606,7 +3692,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/tor.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/phi.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -3616,7 +3702,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/tor.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/phi.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -3626,7 +3712,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/scoreboard/tor.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/scoreboard/phi.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -3645,7 +3731,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/_/name/tor/toronto-maple-leafs",
+                               "href":"https://www.espn.com/nfl/team/_/name/phi/philadelphia-eagles",
                                "text":"Clubhouse",
                                "shortText":"Clubhouse",
                                "isExternal":false,
@@ -3659,7 +3745,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/roster/_/name/tor/toronto-maple-leafs",
+                               "href":"http://www.espn.com/nfl/team/roster/_/name/phi/philadelphia-eagles",
                                "text":"Roster",
                                "shortText":"Roster",
                                "isExternal":false,
@@ -3673,7 +3759,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/stats/_/name/tor/toronto-maple-leafs",
+                               "href":"http://www.espn.com/nfl/team/stats/_/name/phi/philadelphia-eagles",
                                "text":"Statistics",
                                "shortText":"Statistics",
                                "isExternal":false,
@@ -3687,7 +3773,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"https://www.espn.com/nhl/team/schedule/_/name/tor",
+                               "href":"https://www.espn.com/nfl/team/schedule/_/name/phi",
                                "text":"Schedule",
                                "shortText":"Schedule",
                                "isExternal":false,
@@ -3701,274 +3787,24 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"https://www.vividseats.com/toronto-maple-leafs-tickets--sports-nhl-hockey/performer/878?wsUser=717",
+                               "href":"https://www.vividseats.com/philadelphia-eagles-tickets--sports-nfl-football/performer/669?wsUser=717",
                                "text":"Tickets",
                                "shortText":"Tickets",
                                "isExternal":true,
                                "isPremium":false,
                                "isHidden":false
-                            }
-                         ]
-                      }
-                   },
-                   {
-                      "team":{
-                         "id":"22",
-                         "uid":"s:70~l:90~t:22",
-                         "slug":"vancouver-canucks",
-                         "abbreviation":"VAN",
-                         "displayName":"Vancouver Canucks",
-                         "shortDisplayName":"Canucks",
-                         "name":"Canucks",
-                         "nickname":"Vancouver",
-                         "location":"Vancouver",
-                         "color":"003e7e",
-                         "alternateColor":"008752",
-                         "isActive":true,
-                         "isAllStar":false,
-                         "logos":[
-                            {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/van.png",
-                               "alt":"",
-                               "rel":[
-                                  "full",
-                                  "default"
-                               ],
-                               "width":500,
-                               "height":500
                             },
-                            {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/van.png",
-                               "alt":"",
-                               "rel":[
-                                  "full",
-                                  "dark"
-                               ],
-                               "width":500,
-                               "height":500
-                            },
-                            {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/van.png",
-                               "alt":"",
-                               "rel":[
-                                  "full",
-                                  "scoreboard"
-                               ],
-                               "width":500,
-                               "height":500
-                            },
-                            {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/scoreboard/van.png",
-                               "alt":"",
-                               "rel":[
-                                  "full",
-                                  "scoreboard",
-                                  "dark"
-                               ],
-                               "width":500,
-                               "height":500
-                            }
-                         ],
-                         "links":[
                             {
                                "language":"en-US",
                                "rel":[
-                                  "clubhouse",
+                                  "depthchart",
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/_/name/van/vancouver-canucks",
-                               "text":"Clubhouse",
-                               "shortText":"Clubhouse",
+                               "href":"https://www.espn.com/nfl/team/depth/_/name/phi",
+                               "text":"Depth Chart",
+                               "shortText":"Depth Chart",
                                "isExternal":false,
-                               "isPremium":false,
-                               "isHidden":false
-                            },
-                            {
-                               "language":"en-US",
-                               "rel":[
-                                  "roster",
-                                  "desktop",
-                                  "team"
-                               ],
-                               "href":"http://www.espn.com/nhl/team/roster/_/name/van/vancouver-canucks",
-                               "text":"Roster",
-                               "shortText":"Roster",
-                               "isExternal":false,
-                               "isPremium":false,
-                               "isHidden":false
-                            },
-                            {
-                               "language":"en-US",
-                               "rel":[
-                                  "stats",
-                                  "desktop",
-                                  "team"
-                               ],
-                               "href":"http://www.espn.com/nhl/team/stats/_/name/van/vancouver-canucks",
-                               "text":"Statistics",
-                               "shortText":"Statistics",
-                               "isExternal":false,
-                               "isPremium":false,
-                               "isHidden":false
-                            },
-                            {
-                               "language":"en-US",
-                               "rel":[
-                                  "schedule",
-                                  "desktop",
-                                  "team"
-                               ],
-                               "href":"https://www.espn.com/nhl/team/schedule/_/name/van",
-                               "text":"Schedule",
-                               "shortText":"Schedule",
-                               "isExternal":false,
-                               "isPremium":false,
-                               "isHidden":false
-                            },
-                            {
-                               "language":"en-US",
-                               "rel":[
-                                  "tickets",
-                                  "desktop",
-                                  "team"
-                               ],
-                               "href":"https://www.vividseats.com/vancouver-canucks-tickets--sports-nhl-hockey/performer/909?wsUser=717",
-                               "text":"Tickets",
-                               "shortText":"Tickets",
-                               "isExternal":true,
-                               "isPremium":false,
-                               "isHidden":false
-                            }
-                         ]
-                      }
-                   },
-                   {
-                      "team":{
-                         "id":"37",
-                         "uid":"s:70~l:90~t:37",
-                         "slug":"vegas-golden-knights",
-                         "abbreviation":"VGK",
-                         "displayName":"Vegas Golden Knights",
-                         "shortDisplayName":"Golden Knights",
-                         "name":"Golden Knights",
-                         "nickname":"Vegas",
-                         "location":"Vegas",
-                         "color":"344043",
-                         "alternateColor":"b4975a",
-                         "isActive":true,
-                         "isAllStar":false,
-                         "logos":[
-                            {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/vgk.png",
-                               "alt":"",
-                               "rel":[
-                                  "full",
-                                  "default"
-                               ],
-                               "width":500,
-                               "height":500
-                            },
-                            {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/vgk.png",
-                               "alt":"",
-                               "rel":[
-                                  "full",
-                                  "dark"
-                               ],
-                               "width":500,
-                               "height":500
-                            },
-                            {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/vgk.png",
-                               "alt":"",
-                               "rel":[
-                                  "full",
-                                  "scoreboard"
-                               ],
-                               "width":500,
-                               "height":500
-                            },
-                            {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/scoreboard/vgk.png",
-                               "alt":"",
-                               "rel":[
-                                  "full",
-                                  "scoreboard",
-                                  "dark"
-                               ],
-                               "width":500,
-                               "height":500
-                            }
-                         ],
-                         "links":[
-                            {
-                               "language":"en-US",
-                               "rel":[
-                                  "clubhouse",
-                                  "desktop",
-                                  "team"
-                               ],
-                               "href":"http://www.espn.com/nhl/team/_/name/vgk/vegas-golden-knights",
-                               "text":"Clubhouse",
-                               "shortText":"Clubhouse",
-                               "isExternal":false,
-                               "isPremium":false,
-                               "isHidden":false
-                            },
-                            {
-                               "language":"en-US",
-                               "rel":[
-                                  "roster",
-                                  "desktop",
-                                  "team"
-                               ],
-                               "href":"http://www.espn.com/nhl/team/roster/_/name/vgk/vegas-golden-knights",
-                               "text":"Roster",
-                               "shortText":"Roster",
-                               "isExternal":false,
-                               "isPremium":false,
-                               "isHidden":false
-                            },
-                            {
-                               "language":"en-US",
-                               "rel":[
-                                  "stats",
-                                  "desktop",
-                                  "team"
-                               ],
-                               "href":"http://www.espn.com/nhl/team/stats/_/name/vgk/vegas-golden-knights",
-                               "text":"Statistics",
-                               "shortText":"Statistics",
-                               "isExternal":false,
-                               "isPremium":false,
-                               "isHidden":false
-                            },
-                            {
-                               "language":"en-US",
-                               "rel":[
-                                  "schedule",
-                                  "desktop",
-                                  "team"
-                               ],
-                               "href":"https://www.espn.com/nhl/team/schedule/_/name/vgk",
-                               "text":"Schedule",
-                               "shortText":"Schedule",
-                               "isExternal":false,
-                               "isPremium":false,
-                               "isHidden":false
-                            },
-                            {
-                               "language":"en-US",
-                               "rel":[
-                                  "tickets",
-                                  "desktop",
-                                  "team"
-                               ],
-                               "href":"https://www.vividseats.com/vegas-golden-knights-tickets--sports-nhl-hockey/performer/54228?wsUser=717",
-                               "text":"Tickets",
-                               "shortText":"Tickets",
-                               "isExternal":true,
                                "isPremium":false,
                                "isHidden":false
                             }
@@ -3978,21 +3814,21 @@ export const nhlTeamData = {
                    {
                       "team":{
                          "id":"23",
-                         "uid":"s:70~l:90~t:23",
-                         "slug":"washington-capitals",
-                         "abbreviation":"WSH",
-                         "displayName":"Washington Capitals",
-                         "shortDisplayName":"Capitals",
-                         "name":"Capitals",
-                         "nickname":"Washington",
-                         "location":"Washington",
-                         "color":"d71830",
-                         "alternateColor":"0b1f41",
+                         "uid":"s:20~l:28~t:23",
+                         "slug":"pittsburgh-steelers",
+                         "abbreviation":"PIT",
+                         "displayName":"Pittsburgh Steelers",
+                         "shortDisplayName":"Steelers",
+                         "name":"Steelers",
+                         "nickname":"Steelers",
+                         "location":"Pittsburgh",
+                         "color":"000000",
+                         "alternateColor":"ffb612",
                          "isActive":true,
                          "isAllStar":false,
                          "logos":[
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/wsh.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/pit.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -4002,7 +3838,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/wsh.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/pit.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -4012,7 +3848,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/wsh.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/pit.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -4022,7 +3858,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/scoreboard/wsh.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/scoreboard/pit.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -4041,7 +3877,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/_/name/wsh/washington-capitals",
+                               "href":"https://www.espn.com/nfl/team/_/name/pit/pittsburgh-steelers",
                                "text":"Clubhouse",
                                "shortText":"Clubhouse",
                                "isExternal":false,
@@ -4055,7 +3891,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/roster/_/name/wsh/washington-capitals",
+                               "href":"http://www.espn.com/nfl/team/roster/_/name/pit/pittsburgh-steelers",
                                "text":"Roster",
                                "shortText":"Roster",
                                "isExternal":false,
@@ -4069,7 +3905,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/stats/_/name/wsh/washington-capitals",
+                               "href":"http://www.espn.com/nfl/team/stats/_/name/pit/pittsburgh-steelers",
                                "text":"Statistics",
                                "shortText":"Statistics",
                                "isExternal":false,
@@ -4083,7 +3919,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"https://www.espn.com/nhl/team/schedule/_/name/wsh",
+                               "href":"https://www.espn.com/nfl/team/schedule/_/name/pit",
                                "text":"Schedule",
                                "shortText":"Schedule",
                                "isExternal":false,
@@ -4097,10 +3933,608 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"https://www.vividseats.com/washington-capitals-tickets--sports-nhl-hockey/performer/923?wsUser=717",
+                               "href":"https://www.vividseats.com/pittsburgh-steelers-tickets--sports-nfl-football/performer/686?wsUser=717",
                                "text":"Tickets",
                                "shortText":"Tickets",
                                "isExternal":true,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "depthchart",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"https://www.espn.com/nfl/team/depth/_/name/pit",
+                               "text":"Depth Chart",
+                               "shortText":"Depth Chart",
+                               "isExternal":false,
+                               "isPremium":false,
+                               "isHidden":false
+                            }
+                         ]
+                      }
+                   },
+                   {
+                      "team":{
+                         "id":"25",
+                         "uid":"s:20~l:28~t:25",
+                         "slug":"san-francisco-49ers",
+                         "abbreviation":"SF",
+                         "displayName":"San Francisco 49ers",
+                         "shortDisplayName":"49ers",
+                         "name":"49ers",
+                         "nickname":"49ers",
+                         "location":"San Francisco",
+                         "color":"aa0000",
+                         "alternateColor":"b3995d",
+                         "isActive":true,
+                         "isAllStar":false,
+                         "logos":[
+                            {
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/sf.png",
+                               "alt":"",
+                               "rel":[
+                                  "full",
+                                  "default"
+                               ],
+                               "width":500,
+                               "height":500
+                            },
+                            {
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/sf.png",
+                               "alt":"",
+                               "rel":[
+                                  "full",
+                                  "dark"
+                               ],
+                               "width":500,
+                               "height":500
+                            },
+                            {
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sf.png",
+                               "alt":"",
+                               "rel":[
+                                  "full",
+                                  "scoreboard"
+                               ],
+                               "width":500,
+                               "height":500
+                            },
+                            {
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/scoreboard/sf.png",
+                               "alt":"",
+                               "rel":[
+                                  "full",
+                                  "scoreboard",
+                                  "dark"
+                               ],
+                               "width":500,
+                               "height":500
+                            }
+                         ],
+                         "links":[
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "clubhouse",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"https://www.espn.com/nfl/team/_/name/sf/san-francisco-49ers",
+                               "text":"Clubhouse",
+                               "shortText":"Clubhouse",
+                               "isExternal":false,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "roster",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"http://www.espn.com/nfl/team/roster/_/name/sf/san-francisco-49ers",
+                               "text":"Roster",
+                               "shortText":"Roster",
+                               "isExternal":false,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "stats",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"http://www.espn.com/nfl/team/stats/_/name/sf/san-francisco-49ers",
+                               "text":"Statistics",
+                               "shortText":"Statistics",
+                               "isExternal":false,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "schedule",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"https://www.espn.com/nfl/team/schedule/_/name/sf",
+                               "text":"Schedule",
+                               "shortText":"Schedule",
+                               "isExternal":false,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "tickets",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"https://www.vividseats.com/san-francisco-49ers-tickets--sports-nfl-football/performer/758?wsUser=717",
+                               "text":"Tickets",
+                               "shortText":"Tickets",
+                               "isExternal":true,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "depthchart",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"https://www.espn.com/nfl/team/depth/_/name/sf",
+                               "text":"Depth Chart",
+                               "shortText":"Depth Chart",
+                               "isExternal":false,
+                               "isPremium":false,
+                               "isHidden":false
+                            }
+                         ]
+                      }
+                   },
+                   {
+                      "team":{
+                         "id":"26",
+                         "uid":"s:20~l:28~t:26",
+                         "slug":"seattle-seahawks",
+                         "abbreviation":"SEA",
+                         "displayName":"Seattle Seahawks",
+                         "shortDisplayName":"Seahawks",
+                         "name":"Seahawks",
+                         "nickname":"Seahawks",
+                         "location":"Seattle",
+                         "color":"002a5c",
+                         "alternateColor":"69be28",
+                         "isActive":true,
+                         "isAllStar":false,
+                         "logos":[
+                            {
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/sea.png",
+                               "alt":"",
+                               "rel":[
+                                  "full",
+                                  "default"
+                               ],
+                               "width":500,
+                               "height":500
+                            },
+                            {
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/sea.png",
+                               "alt":"",
+                               "rel":[
+                                  "full",
+                                  "dark"
+                               ],
+                               "width":500,
+                               "height":500
+                            },
+                            {
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sea.png",
+                               "alt":"",
+                               "rel":[
+                                  "full",
+                                  "scoreboard"
+                               ],
+                               "width":500,
+                               "height":500
+                            },
+                            {
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/scoreboard/sea.png",
+                               "alt":"",
+                               "rel":[
+                                  "full",
+                                  "scoreboard",
+                                  "dark"
+                               ],
+                               "width":500,
+                               "height":500
+                            }
+                         ],
+                         "links":[
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "clubhouse",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"https://www.espn.com/nfl/team/_/name/sea/seattle-seahawks",
+                               "text":"Clubhouse",
+                               "shortText":"Clubhouse",
+                               "isExternal":false,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "roster",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"http://www.espn.com/nfl/team/roster/_/name/sea/seattle-seahawks",
+                               "text":"Roster",
+                               "shortText":"Roster",
+                               "isExternal":false,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "stats",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"http://www.espn.com/nfl/team/stats/_/name/sea/seattle-seahawks",
+                               "text":"Statistics",
+                               "shortText":"Statistics",
+                               "isExternal":false,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "schedule",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"https://www.espn.com/nfl/team/schedule/_/name/sea",
+                               "text":"Schedule",
+                               "shortText":"Schedule",
+                               "isExternal":false,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "tickets",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"https://www.vividseats.com/seattle-seahawks-tickets--sports-nfl-football/performer/772?wsUser=717",
+                               "text":"Tickets",
+                               "shortText":"Tickets",
+                               "isExternal":true,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "depthchart",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"https://www.espn.com/nfl/team/depth/_/name/sea",
+                               "text":"Depth Chart",
+                               "shortText":"Depth Chart",
+                               "isExternal":false,
+                               "isPremium":false,
+                               "isHidden":false
+                            }
+                         ]
+                      }
+                   },
+                   {
+                      "team":{
+                         "id":"27",
+                         "uid":"s:20~l:28~t:27",
+                         "slug":"tampa-bay-buccaneers",
+                         "abbreviation":"TB",
+                         "displayName":"Tampa Bay Buccaneers",
+                         "shortDisplayName":"Buccaneers",
+                         "name":"Buccaneers",
+                         "nickname":"Buccaneers",
+                         "location":"Tampa Bay",
+                         "color":"bd1c36",
+                         "alternateColor":"3e3a35",
+                         "isActive":true,
+                         "isAllStar":false,
+                         "logos":[
+                            {
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/tb.png",
+                               "alt":"",
+                               "rel":[
+                                  "full",
+                                  "default"
+                               ],
+                               "width":500,
+                               "height":500
+                            },
+                            {
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/tb.png",
+                               "alt":"",
+                               "rel":[
+                                  "full",
+                                  "dark"
+                               ],
+                               "width":500,
+                               "height":500
+                            },
+                            {
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/tb.png",
+                               "alt":"",
+                               "rel":[
+                                  "full",
+                                  "scoreboard"
+                               ],
+                               "width":500,
+                               "height":500
+                            },
+                            {
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/scoreboard/tb.png",
+                               "alt":"",
+                               "rel":[
+                                  "full",
+                                  "scoreboard",
+                                  "dark"
+                               ],
+                               "width":500,
+                               "height":500
+                            }
+                         ],
+                         "links":[
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "clubhouse",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"https://www.espn.com/nfl/team/_/name/tb/tampa-bay-buccaneers",
+                               "text":"Clubhouse",
+                               "shortText":"Clubhouse",
+                               "isExternal":false,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "roster",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"http://www.espn.com/nfl/team/roster/_/name/tb/tampa-bay-buccaneers",
+                               "text":"Roster",
+                               "shortText":"Roster",
+                               "isExternal":false,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "stats",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"http://www.espn.com/nfl/team/stats/_/name/tb/tampa-bay-buccaneers",
+                               "text":"Statistics",
+                               "shortText":"Statistics",
+                               "isExternal":false,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "schedule",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"https://www.espn.com/nfl/team/schedule/_/name/tb",
+                               "text":"Schedule",
+                               "shortText":"Schedule",
+                               "isExternal":false,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "tickets",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"https://www.vividseats.com/tampa-bay-buccaneers-tickets--sports-nfl-football/performer/839?wsUser=717",
+                               "text":"Tickets",
+                               "shortText":"Tickets",
+                               "isExternal":true,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "depthchart",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"https://www.espn.com/nfl/team/depth/_/name/tb",
+                               "text":"Depth Chart",
+                               "shortText":"Depth Chart",
+                               "isExternal":false,
+                               "isPremium":false,
+                               "isHidden":false
+                            }
+                         ]
+                      }
+                   },
+                   {
+                      "team":{
+                         "id":"10",
+                         "uid":"s:20~l:28~t:10",
+                         "slug":"tennessee-titans",
+                         "abbreviation":"TEN",
+                         "displayName":"Tennessee Titans",
+                         "shortDisplayName":"Titans",
+                         "name":"Titans",
+                         "nickname":"Titans",
+                         "location":"Tennessee",
+                         "color":"4b92db",
+                         "alternateColor":"002a5c",
+                         "isActive":true,
+                         "isAllStar":false,
+                         "logos":[
+                            {
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/ten.png",
+                               "alt":"",
+                               "rel":[
+                                  "full",
+                                  "default"
+                               ],
+                               "width":500,
+                               "height":500
+                            },
+                            {
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/ten.png",
+                               "alt":"",
+                               "rel":[
+                                  "full",
+                                  "dark"
+                               ],
+                               "width":500,
+                               "height":500
+                            },
+                            {
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ten.png",
+                               "alt":"",
+                               "rel":[
+                                  "full",
+                                  "scoreboard"
+                               ],
+                               "width":500,
+                               "height":500
+                            },
+                            {
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/scoreboard/ten.png",
+                               "alt":"",
+                               "rel":[
+                                  "full",
+                                  "scoreboard",
+                                  "dark"
+                               ],
+                               "width":500,
+                               "height":500
+                            }
+                         ],
+                         "links":[
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "clubhouse",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"https://www.espn.com/nfl/team/_/name/ten/tennessee-titans",
+                               "text":"Clubhouse",
+                               "shortText":"Clubhouse",
+                               "isExternal":false,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "roster",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"http://www.espn.com/nfl/team/roster/_/name/ten/tennessee-titans",
+                               "text":"Roster",
+                               "shortText":"Roster",
+                               "isExternal":false,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "stats",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"http://www.espn.com/nfl/team/stats/_/name/ten/tennessee-titans",
+                               "text":"Statistics",
+                               "shortText":"Statistics",
+                               "isExternal":false,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "schedule",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"https://www.espn.com/nfl/team/schedule/_/name/ten",
+                               "text":"Schedule",
+                               "shortText":"Schedule",
+                               "isExternal":false,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "tickets",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"https://www.vividseats.com/tennessee-titans-tickets--sports-nfl-football/performer/848?wsUser=717",
+                               "text":"Tickets",
+                               "shortText":"Tickets",
+                               "isExternal":true,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "depthchart",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"https://www.espn.com/nfl/team/depth/_/name/ten",
+                               "text":"Depth Chart",
+                               "shortText":"Depth Chart",
+                               "isExternal":false,
                                "isPremium":false,
                                "isHidden":false
                             }
@@ -4110,21 +4544,21 @@ export const nhlTeamData = {
                    {
                       "team":{
                          "id":"28",
-                         "uid":"s:70~l:90~t:28",
-                         "slug":"winnipeg-jets",
-                         "abbreviation":"WPG",
-                         "displayName":"Winnipeg Jets",
-                         "shortDisplayName":"Jets",
-                         "name":"Jets",
-                         "nickname":"Winnipeg",
-                         "location":"Winnipeg",
-                         "color":"002d62",
-                         "alternateColor":"c41230",
+                         "uid":"s:20~l:28~t:28",
+                         "slug":"washington-commanders",
+                         "abbreviation":"WSH",
+                         "displayName":"Washington Commanders",
+                         "shortDisplayName":"Commanders",
+                         "name":"Commanders",
+                         "nickname":"Commanders",
+                         "location":"Washington",
+                         "color":"5a1414",
+                         "alternateColor":"ffb612",
                          "isActive":true,
                          "isAllStar":false,
                          "logos":[
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/wpg.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/wsh.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -4134,7 +4568,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/wpg.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/wsh.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -4144,7 +4578,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/wpg.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/wsh.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -4154,7 +4588,7 @@ export const nhlTeamData = {
                                "height":500
                             },
                             {
-                               "href":"https://a.espncdn.com/i/teamlogos/nhl/500-dark/scoreboard/wpg.png",
+                               "href":"https://a.espncdn.com/i/teamlogos/nfl/500-dark/scoreboard/wsh.png",
                                "alt":"",
                                "rel":[
                                   "full",
@@ -4173,7 +4607,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/_/name/wpg/winnipeg-jets",
+                               "href":"https://www.espn.com/nfl/team/_/name/wsh/washington-commanders",
                                "text":"Clubhouse",
                                "shortText":"Clubhouse",
                                "isExternal":false,
@@ -4187,7 +4621,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/roster/_/name/wpg/winnipeg-jets",
+                               "href":"http://www.espn.com/nfl/team/roster/_/name/wsh/washington-commanders",
                                "text":"Roster",
                                "shortText":"Roster",
                                "isExternal":false,
@@ -4201,7 +4635,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"http://www.espn.com/nhl/team/stats/_/name/wpg/winnipeg-jets",
+                               "href":"http://www.espn.com/nfl/team/stats/_/name/wsh/washington-commanders",
                                "text":"Statistics",
                                "shortText":"Statistics",
                                "isExternal":false,
@@ -4215,7 +4649,7 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"https://www.espn.com/nhl/team/schedule/_/name/wpg",
+                               "href":"https://www.espn.com/nfl/team/schedule/_/name/wsh",
                                "text":"Schedule",
                                "shortText":"Schedule",
                                "isExternal":false,
@@ -4229,10 +4663,24 @@ export const nhlTeamData = {
                                   "desktop",
                                   "team"
                                ],
-                               "href":"https://www.vividseats.com/winnipeg-jets-tickets--sports-nhl-hockey/performer/26544?wsUser=717",
+                               "href":"https://www.vividseats.com/washington-commanders-tickets--sports-nfl-football/performer/925?wsUser=717",
                                "text":"Tickets",
                                "shortText":"Tickets",
                                "isExternal":true,
+                               "isPremium":false,
+                               "isHidden":false
+                            },
+                            {
+                               "language":"en-US",
+                               "rel":[
+                                  "depthchart",
+                                  "desktop",
+                                  "team"
+                               ],
+                               "href":"https://www.espn.com/nfl/team/depth/_/name/wsh",
+                               "text":"Depth Chart",
+                               "shortText":"Depth Chart",
+                               "isExternal":false,
                                "isPremium":false,
                                "isHidden":false
                             }
@@ -4240,10 +4688,10 @@ export const nhlTeamData = {
                       }
                    }
                 ],
-                "year":2024,
+                "year":2023,
                 "season":{
-                   "year":2024,
-                   "displayName":"2023-24"
+                   "year":2023,
+                   "displayName":"2023"
                 }
              }
           ]

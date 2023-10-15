@@ -142,36 +142,36 @@ export interface Database {
       }
       nfl_game_today: {
         Row: {
-          away_team_id: number
+          away_team: number
           created_at: string
           game_stream: number | null
-          home_team_id: number
+          home_team: number
           id: number
           start_time: string
           title: string
         }
         Insert: {
-          away_team_id: number
+          away_team: number
           created_at?: string
           game_stream?: number | null
-          home_team_id: number
+          home_team: number
           id?: number
           start_time: string
           title: string
         }
         Update: {
-          away_team_id?: number
+          away_team?: number
           created_at?: string
           game_stream?: number | null
-          home_team_id?: number
+          home_team?: number
           id?: number
           start_time?: string
           title?: string
         }
         Relationships: [
           {
-            foreignKeyName: "nfl_game_today_away_team_id_fkey"
-            columns: ["away_team_id"]
+            foreignKeyName: "nfl_game_today_away_team_fkey"
+            columns: ["away_team"]
             referencedRelation: "nfl_team"
             referencedColumns: ["id"]
           },
@@ -182,8 +182,8 @@ export interface Database {
             referencedColumns: ["id"]
           },
           {
-            foreignKeyName: "nfl_game_today_home_team_id_fkey"
-            columns: ["home_team_id"]
+            foreignKeyName: "nfl_game_today_home_team_fkey"
+            columns: ["home_team"]
             referencedRelation: "nfl_team"
             referencedColumns: ["id"]
           }

@@ -53,7 +53,7 @@ const getNHLGamesForDateFromESPN = async function (date: Date): Promise<NHLGame[
   const espnGamesScheduled: ESPNNHLScheduleResponse = response.data.content
   const nhlGames: NHLGame[] = []
 
-  if (espnGamesScheduled.schedule[espnDateString].games.length === 0) {
+  if (typeof espnGamesScheduled.schedule[espnDateString] === 'undefined') {
     return nhlGames
   }
 
@@ -96,9 +96,10 @@ const overwriteNHLSchedule = async function(nhlGames: NHLGame[]) {
   nhlGames.forEach(async game => {
     const { error } = await supabase.from('nhl_game_today').insert({
       title: game.title,
-      home_team: +game.homeTeamID,
-      away_team: +game.awayteamID,
-      start_time: game.date
+      home_team_id: +game.homeTeamID,
+      away_team_id: +game.awayteamID,
+      start_time: game.date,
+      view_price_dollars: 1
       // stream_link: game.streamlink
     })
     if (error) console.log(`Error writing nhl game: ${JSON.stringify(error)}`)

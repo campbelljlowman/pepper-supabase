@@ -53,7 +53,7 @@ const getNFLGamesForDateFromESPN = async function (date: Date): Promise<NFLGame[
   const espnGamesScheduled: ESPNNFLScheduleResponse = response.data.content
   const nflGames: NFLGame[] = []
 
-  if (espnGamesScheduled.schedule[espnDateString].games.length === 0) {
+  if (typeof espnGamesScheduled.schedule[espnDateString] === 'undefined') {
     return nflGames
   }
 
@@ -96,9 +96,10 @@ const overwriteNFLSchedule = async function(nflGames: NFLGame[]) {
   nflGames.forEach(async game => {
     const { error } = await supabase.from('nfl_game_today').insert({
       title: game.title,
-      home_team: +game.homeTeamID,
-      away_team: +game.awayteamID,
-      start_time: game.date
+      home_team_id: +game.homeTeamID,
+      away_team_id: +game.awayteamID,
+      start_time: game.date,
+      view_price_dollars: 1
       // stream_link: game.streamlink
     })
     if (error) console.log(`Error writing nfl game: ${JSON.stringify(error)}`)
@@ -144,3 +145,15 @@ serve(updateNFLSchedules)
 // To unschedule
 
 // select cron.unschedule('update-nfl-schedule-every-day');
+
+// TODO: RLS notes:
+// There will be a watch page per sport
+// Move view price into game today table (rename to watch price) and rename game stream table to stream link, it will only have stream link and title
+
+// Stream link table has RLS policy, something like:
+// blah blah blah using (
+//      id in (
+//         select ids_of_game_streams_user_can_view from users WHERE id = auth.uid()
+//      )
+// )
+// Also change stream link to always show as part of game

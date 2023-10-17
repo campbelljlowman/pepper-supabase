@@ -34,75 +34,54 @@ export interface Database {
   }
   public: {
     Tables: {
-      game_stream: {
-        Row: {
-          created_at: string
-          id: number
-          name: string
-          stream_link: string
-          view_price: number
-        }
-        Insert: {
-          created_at?: string
-          id?: number
-          name: string
-          stream_link: string
-          view_price: number
-        }
-        Update: {
-          created_at?: string
-          id?: number
-          name?: string
-          stream_link?: string
-          view_price?: number
-        }
-        Relationships: []
-      }
       mlb_game_today: {
         Row: {
-          away_team: number
+          away_team_id: number
           created_at: string
-          game_stream: number | null
-          home_team: number
+          home_team_id: number
           id: number
           start_time: string
+          stream_link_id: number | null
           title: string
+          view_price_dollars: number
         }
         Insert: {
-          away_team: number
+          away_team_id: number
           created_at?: string
-          game_stream?: number | null
-          home_team: number
+          home_team_id: number
           id?: number
           start_time: string
+          stream_link_id?: number | null
           title: string
+          view_price_dollars: number
         }
         Update: {
-          away_team?: number
+          away_team_id?: number
           created_at?: string
-          game_stream?: number | null
-          home_team?: number
+          home_team_id?: number
           id?: number
           start_time?: string
+          stream_link_id?: number | null
           title?: string
+          view_price_dollars?: number
         }
         Relationships: [
           {
-            foreignKeyName: "mlb_game_today_away_team_fkey"
-            columns: ["away_team"]
+            foreignKeyName: "mlb_game_today_away_team_id_fkey"
+            columns: ["away_team_id"]
             referencedRelation: "mlb_team"
             referencedColumns: ["id"]
           },
           {
-            foreignKeyName: "mlb_game_today_game_stream_fkey"
-            columns: ["game_stream"]
-            referencedRelation: "game_stream"
+            foreignKeyName: "mlb_game_today_home_team_id_fkey"
+            columns: ["home_team_id"]
+            referencedRelation: "mlb_team"
             referencedColumns: ["id"]
           },
           {
-            foreignKeyName: "mlb_game_today_home_team_fkey"
-            columns: ["home_team"]
-            referencedRelation: "mlb_team"
+            foreignKeyName: "mlb_game_today_stream_link_id_fkey"
+            columns: ["stream_link_id"]
+            referencedRelation: "stream_link"
             referencedColumns: ["id"]
           }
         ]
@@ -142,49 +121,52 @@ export interface Database {
       }
       nfl_game_today: {
         Row: {
-          away_team: number
+          away_team_id: number
           created_at: string
-          game_stream: number | null
-          home_team: number
+          home_team_id: number
           id: number
           start_time: string
+          stream_link_id: number | null
           title: string
+          view_price_dollars: number
         }
         Insert: {
-          away_team: number
+          away_team_id: number
           created_at?: string
-          game_stream?: number | null
-          home_team: number
+          home_team_id: number
           id?: number
           start_time: string
+          stream_link_id?: number | null
           title: string
+          view_price_dollars: number
         }
         Update: {
-          away_team?: number
+          away_team_id?: number
           created_at?: string
-          game_stream?: number | null
-          home_team?: number
+          home_team_id?: number
           id?: number
           start_time?: string
+          stream_link_id?: number | null
           title?: string
+          view_price_dollars?: number
         }
         Relationships: [
           {
-            foreignKeyName: "nfl_game_today_away_team_fkey"
-            columns: ["away_team"]
+            foreignKeyName: "nfl_game_today_away_team_id_fkey"
+            columns: ["away_team_id"]
             referencedRelation: "nfl_team"
             referencedColumns: ["id"]
           },
           {
-            foreignKeyName: "nfl_game_today_game_stream_fkey"
-            columns: ["game_stream"]
-            referencedRelation: "game_stream"
+            foreignKeyName: "nfl_game_today_home_team_id_fkey"
+            columns: ["home_team_id"]
+            referencedRelation: "nfl_team"
             referencedColumns: ["id"]
           },
           {
-            foreignKeyName: "nfl_game_today_home_team_fkey"
-            columns: ["home_team"]
-            referencedRelation: "nfl_team"
+            foreignKeyName: "nfl_game_today_stream_link_id_fkey"
+            columns: ["stream_link_id"]
+            referencedRelation: "stream_link"
             referencedColumns: ["id"]
           }
         ]
@@ -224,49 +206,52 @@ export interface Database {
       }
       nhl_game_today: {
         Row: {
-          away_team: number
+          away_team_id: number
           created_at: string
-          game_stream: number | null
-          home_team: number
+          home_team_id: number
           id: number
           start_time: string
+          stream_link_id: number | null
           title: string
+          view_price_dollars: number
         }
         Insert: {
-          away_team: number
+          away_team_id: number
           created_at?: string
-          game_stream?: number | null
-          home_team: number
+          home_team_id: number
           id?: number
           start_time: string
+          stream_link_id?: number | null
           title: string
+          view_price_dollars: number
         }
         Update: {
-          away_team?: number
+          away_team_id?: number
           created_at?: string
-          game_stream?: number | null
-          home_team?: number
+          home_team_id?: number
           id?: number
           start_time?: string
+          stream_link_id?: number | null
           title?: string
+          view_price_dollars?: number
         }
         Relationships: [
           {
-            foreignKeyName: "nhl_game_today_away_team_fkey"
-            columns: ["away_team"]
+            foreignKeyName: "nhl_game_today_away_team_id_fkey"
+            columns: ["away_team_id"]
             referencedRelation: "nhl_team"
             referencedColumns: ["id"]
           },
           {
-            foreignKeyName: "nhl_game_today_game_stream_fkey"
-            columns: ["game_stream"]
-            referencedRelation: "game_stream"
+            foreignKeyName: "nhl_game_today_home_team_id_fkey"
+            columns: ["home_team_id"]
+            referencedRelation: "nhl_team"
             referencedColumns: ["id"]
           },
           {
-            foreignKeyName: "nhl_game_today_home_team_fkey"
-            columns: ["home_team"]
-            referencedRelation: "nhl_team"
+            foreignKeyName: "nhl_game_today_stream_link_id_fkey"
+            columns: ["stream_link_id"]
+            referencedRelation: "stream_link"
             referencedColumns: ["id"]
           }
         ]
@@ -303,6 +288,49 @@ export interface Database {
           short_display_name?: string
         }
         Relationships: []
+      }
+      stream_link: {
+        Row: {
+          created_at: string
+          id: number
+          stream_link: string
+          title: string
+        }
+        Insert: {
+          created_at?: string
+          id?: number
+          stream_link: string
+          title: string
+        }
+        Update: {
+          created_at?: string
+          id?: number
+          stream_link?: string
+          title?: string
+        }
+        Relationships: []
+      }
+      user: {
+        Row: {
+          id: string
+          ids_of_game_streams_user_can_view: number[] | null
+        }
+        Insert: {
+          id: string
+          ids_of_game_streams_user_can_view?: number[] | null
+        }
+        Update: {
+          id?: string
+          ids_of_game_streams_user_can_view?: number[] | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "user_id_fkey"
+            columns: ["id"]
+            referencedRelation: "users"
+            referencedColumns: ["id"]
+          }
+        ]
       }
     }
     Views: {

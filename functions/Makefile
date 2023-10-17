@@ -1,3 +1,8 @@
+# // RLS policy for stream_link table
+# // (EXISTS ( SELECT 1
+# //     FROM "user"
+# //    WHERE (("user".id = auth.uid()) AND (stream_link.id = ANY ("user".ids_of_game_streams_user_can_view)))))
+
 start-sb:
 	supabase start
 

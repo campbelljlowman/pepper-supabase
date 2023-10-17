@@ -145,15 +145,3 @@ serve(updateNFLSchedules)
 // To unschedule
 
 // select cron.unschedule('update-nfl-schedule-every-day');
-
-// TODO: RLS notes:
-// There will be a watch page per sport
-// Move view price into game today table (rename to watch price) and rename game stream table to stream link, it will only have stream link and title
-
-// Stream link table has RLS policy, something like:
-// blah blah blah using (
-//      id in (
-//         select ids_of_game_streams_user_can_view from users WHERE id = auth.uid()
-//      )
-// )
-// Also change stream link to always show as part of game

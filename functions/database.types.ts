@@ -201,6 +201,91 @@ export interface Database {
         }
         Relationships: []
       }
+      nba_game_today: {
+        Row: {
+          away_team_id: number
+          created_at: string
+          home_team_id: number
+          id: number
+          start_time: string
+          stream_link_id: number | null
+          title: string
+          view_price_dollars: number
+        }
+        Insert: {
+          away_team_id: number
+          created_at?: string
+          home_team_id: number
+          id?: number
+          start_time: string
+          stream_link_id?: number | null
+          title: string
+          view_price_dollars: number
+        }
+        Update: {
+          away_team_id?: number
+          created_at?: string
+          home_team_id?: number
+          id?: number
+          start_time?: string
+          stream_link_id?: number | null
+          title?: string
+          view_price_dollars?: number
+        }
+        Relationships: [
+          {
+            foreignKeyName: "nba_game_today_away_team_id_fkey"
+            columns: ["away_team_id"]
+            referencedRelation: "nba_team"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "nba_game_today_home_team_id_fkey"
+            columns: ["home_team_id"]
+            referencedRelation: "nba_team"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "nba_game_today_stream_link_id_fkey"
+            columns: ["stream_link_id"]
+            referencedRelation: "stream_link"
+            referencedColumns: ["id"]
+          }
+        ]
+      }
+      nba_team: {
+        Row: {
+          abbreviation: string
+          conference: Database["public"]["Enums"]["nba_conference"]
+          created_at: string
+          display_name: string
+          division: Database["public"]["Enums"]["nba_division"]
+          id: number
+          logo: string
+          short_display_name: string
+        }
+        Insert: {
+          abbreviation: string
+          conference: Database["public"]["Enums"]["nba_conference"]
+          created_at?: string
+          display_name: string
+          division: Database["public"]["Enums"]["nba_division"]
+          id?: number
+          logo: string
+          short_display_name: string
+        }
+        Update: {
+          abbreviation?: string
+          conference?: Database["public"]["Enums"]["nba_conference"]
+          created_at?: string
+          display_name?: string
+          division?: Database["public"]["Enums"]["nba_division"]
+          id?: number
+          logo?: string
+          short_display_name?: string
+        }
+        Relationships: []
+      }
       nfl_game_today: {
         Row: {
           away_team_id: number
@@ -454,6 +539,14 @@ export interface Database {
         | "FBS Independents"
       mlb_division: "Central" | "East" | "West"
       mlb_league: "American League" | "National League"
+      nba_conference: "Eastern" | "Western"
+      nba_division:
+        | "Atlantic"
+        | "Central"
+        | "Southeast"
+        | "Northwest"
+        | "Pacific"
+        | "Southwest"
       nfl_conference: "AFC" | "NFC"
       nfl_division: "North" | "South" | "East" | "West"
       nhl_conference: "Eastern" | "Western"

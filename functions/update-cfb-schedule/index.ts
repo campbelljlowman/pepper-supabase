@@ -3,7 +3,7 @@ import axiod from "https://deno.land/x/axiod@0.26.2/mod.ts";
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2.36.0"
 import { Database } from '../database.types.ts'
 
-// const supabase = createClient<Database>(Deno.env.get('SUPABASE_URL')!, Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')!)
+const supabase = createClient<Database>(Deno.env.get('SUPABASE_URL')!, Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')!)
 
 interface CFBGame {
     title: string
@@ -37,7 +37,7 @@ const getCFBGamesForDateFromESPN = async function (date: Date): Promise<CFBGame[
 
     // year + month with leading 0 + day with leading 0
     const espnDateString = `${date.getFullYear()}${('0' + (date.getMonth() + 1)).slice(-2)}${('0' + date.getDate()).slice(-2)}`
-    const baseUrl = `http://cdn.espn.com/core/college-football/schedulee`;
+    const baseUrl = `http://cdn.espn.com/core/college-football/schedule`;
     const params = {
         xhr: 1,
         render: false,
@@ -95,11 +95,12 @@ const overwriteCFBSchedule = async function(cfbGames: CFBGame[]) {
 
     cfbGames.forEach(async game => {
         const { error } = await supabase.from('cfb_game_today').insert({
-        title: game.title,
-        home_team: +game.homeTeamID,
-        away_team: +game.awayteamID,
-        start_time: game.date
-        // stream_link: game.streamlink
+          title: game.title,
+          home_team_id: +game.homeTeamID,
+          away_team_id: +game.awayteamID,
+          start_time: game.date,
+          view_price_dollars: 1
+          // stream_link: game.streamlink
         })
         if (error) console.log(`Error writing cfb game: ${JSON.stringify(error)}`)
     });
@@ -116,10 +117,8 @@ const updateCFBSchedules = async function(_req: Request) {
     )
 }
 
-const games = await getCFBGamesForDateFromESPN(new Date())
-console.log(games.length)
 // updateCFBSchedules()
-// serve(updateCFBSchedules)
+serve(updateCFBSchedules)
 
 // To invoke:
 // curl -i --location --request POST 'http://localhost:54321/functions/v1/update-cfb-schedule' \

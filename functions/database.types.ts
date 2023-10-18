@@ -34,6 +34,88 @@ export interface Database {
   }
   public: {
     Tables: {
+      cfb_game_today: {
+        Row: {
+          away_team_id: number
+          created_at: string
+          home_team_id: number
+          id: number
+          start_time: string
+          stream_link_id: number | null
+          title: string
+          view_price_dollars: number
+        }
+        Insert: {
+          away_team_id: number
+          created_at?: string
+          home_team_id: number
+          id?: number
+          start_time: string
+          stream_link_id?: number | null
+          title: string
+          view_price_dollars: number
+        }
+        Update: {
+          away_team_id?: number
+          created_at?: string
+          home_team_id?: number
+          id?: number
+          start_time?: string
+          stream_link_id?: number | null
+          title?: string
+          view_price_dollars?: number
+        }
+        Relationships: [
+          {
+            foreignKeyName: "cfb_game_today_away_team_id_fkey"
+            columns: ["away_team_id"]
+            referencedRelation: "cfb_team"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "cfb_game_today_home_team_id_fkey"
+            columns: ["home_team_id"]
+            referencedRelation: "cfb_team"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "cfb_game_today_stream_link_id_fkey"
+            columns: ["stream_link_id"]
+            referencedRelation: "stream_link"
+            referencedColumns: ["id"]
+          }
+        ]
+      }
+      cfb_team: {
+        Row: {
+          abbreviation: string
+          conference: Database["public"]["Enums"]["cfb_conference"]
+          created_at: string
+          display_name: string
+          id: number
+          logo: string
+          short_display_name: string
+        }
+        Insert: {
+          abbreviation: string
+          conference: Database["public"]["Enums"]["cfb_conference"]
+          created_at?: string
+          display_name: string
+          id?: number
+          logo: string
+          short_display_name: string
+        }
+        Update: {
+          abbreviation?: string
+          conference?: Database["public"]["Enums"]["cfb_conference"]
+          created_at?: string
+          display_name?: string
+          id?: number
+          logo?: string
+          short_display_name?: string
+        }
+        Relationships: []
+      }
       mlb_game_today: {
         Row: {
           away_team_id: number
@@ -310,6 +392,24 @@ export interface Database {
         }
         Relationships: []
       }
+      test: {
+        Row: {
+          asdf: Database["public"]["Enums"]["cfb_conference"] | null
+          created_at: string
+          id: number
+        }
+        Insert: {
+          asdf?: Database["public"]["Enums"]["cfb_conference"] | null
+          created_at?: string
+          id?: number
+        }
+        Update: {
+          asdf?: Database["public"]["Enums"]["cfb_conference"] | null
+          created_at?: string
+          id?: number
+        }
+        Relationships: []
+      }
       user: {
         Row: {
           id: string
@@ -340,6 +440,18 @@ export interface Database {
       [_ in never]: never
     }
     Enums: {
+      cfb_conference:
+        | "ACC"
+        | "Mid-American"
+        | "American"
+        | "Mountain West"
+        | "Pac-12"
+        | "Big 12"
+        | "SEC"
+        | "Big Ten"
+        | "Sun Belt"
+        | "Conference USA"
+        | "FBS Independents"
       mlb_division: "Central" | "East" | "West"
       mlb_league: "American League" | "National League"
       nfl_conference: "AFC" | "NFC"
